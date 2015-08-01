@@ -68,6 +68,9 @@
 		009017071B69E0030019C0FB /* Profile_Photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 009017041B69E0030019C0FB /* Profile_Photo.jpg */; };
 		009017091B69E08F0019C0FB /* main-screen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 009017081B69E08F0019C0FB /* main-screen.jpg */; };
 		0090170C1B69F45C0019C0FB /* WindowsAzureMobileServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0090170B1B69F45C0019C0FB /* WindowsAzureMobileServices.framework */; };
+		00B16B311B6D3A5500D31D14 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B16B301B6D3A5500D31D14 /* LoginViewController.swift */; };
+		00B16B331B6D3A6D00D31D14 /* SignupCookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B16B321B6D3A6D00D31D14 /* SignupCookViewController.swift */; };
+		00B16B351B6D3A7A00D31D14 /* SignupDinerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B16B341B6D3A7A00D31D14 /* SignupDinerViewController.swift */; };
 		1E86D6D31B521208003F6736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E86D6D21B521208003F6736 /* AppDelegate.swift */; };
 		1E86D6D51B521208003F6736 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E86D6D41B521208003F6736 /* ViewController.swift */; };
 		1E86D6D81B521208003F6736 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E86D6D61B521208003F6736 /* Main.storyboard */; };
@@ -149,6 +152,9 @@
 		009017081B69E08F0019C0FB /* main-screen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "main-screen.jpg"; path = "anjoui/images/main-screen.jpg"; sourceTree = "<group>"; };
 		0090170B1B69F45C0019C0FB /* WindowsAzureMobileServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WindowsAzureMobileServices.framework; sourceTree = "<group>"; };
 		0090170F1B69F66C0019C0FB /* anjoui-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "anjoui-Bridging-Header.h"; path = "anjoui/anjoui-Bridging-Header.h"; sourceTree = "<group>"; };
+		00B16B301B6D3A5500D31D14 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		00B16B321B6D3A6D00D31D14 /* SignupCookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupCookViewController.swift; sourceTree = "<group>"; };
+		00B16B341B6D3A7A00D31D14 /* SignupDinerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupDinerViewController.swift; sourceTree = "<group>"; };
 		1E86D6CD1B521208003F6736 /* anjoui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = anjoui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E86D6D11B521208003F6736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E86D6D21B521208003F6736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -293,6 +299,9 @@
 				1E86D6D91B521208003F6736 /* Images.xcassets */,
 				1E86D6DB1B521208003F6736 /* LaunchScreen.xib */,
 				1E86D6D01B521208003F6736 /* Supporting Files */,
+				00B16B301B6D3A5500D31D14 /* LoginViewController.swift */,
+				00B16B321B6D3A6D00D31D14 /* SignupCookViewController.swift */,
+				00B16B341B6D3A7A00D31D14 /* SignupDinerViewController.swift */,
 			);
 			path = anjoui;
 			sourceTree = "<group>";
@@ -483,8 +492,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B16B311B6D3A5500D31D14 /* LoginViewController.swift in Sources */,
 				1E86D6D51B521208003F6736 /* ViewController.swift in Sources */,
+				00B16B331B6D3A6D00D31D14 /* SignupCookViewController.swift in Sources */,
 				1E86D6D31B521208003F6736 /* AppDelegate.swift in Sources */,
+				00B16B351B6D3A7A00D31D14 /* SignupDinerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
