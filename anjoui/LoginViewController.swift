@@ -16,8 +16,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginClick(sender: UIButton) {
         // Authenticate user
-        var user_email:String = txtEmail.text as String
-        user_email = user_email.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        var user_email:String = (txtEmail.text as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
         var user_pass:String = txtPassword.text as String
         
         if (user_email == "" || user_pass == "") {

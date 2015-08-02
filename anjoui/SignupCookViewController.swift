@@ -19,6 +19,12 @@ class SignupCookViewController: UIViewController {
     @IBOutlet weak var txtAddress: UITextField!
     
     @IBAction func cookSignup(sender: UIButton) {
+        var user_first_name:String = (txtFirstName.text as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        var user_last_name:String = (txtLastName.text as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        var user_email:String = (txtEmail.text as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        var user_pass:String = txtPassword.text as String
+        
+        
         performSegueWithIdentifier("cook_signup", sender: nil)
     }
     

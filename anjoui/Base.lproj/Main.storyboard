@@ -9,6 +9,8 @@
         <mutableArray key="JosefinSans-Light.ttf">
             <string>JosefinSans-Light</string>
             <string>JosefinSans-Light</string>
+            <string>JosefinSans-Light</string>
+            <string>JosefinSans-Light</string>
         </mutableArray>
         <mutableArray key="JosefinSans-SemiBold.ttf">
             <string>JosefinSans-SemiBold</string>
@@ -110,6 +112,8 @@
             <string>Lato-Thin</string>
             <string>Lato-Thin</string>
             <string>Lato-Thin</string>
+            <string>Lato-Thin</string>
+            <string>Lato-Thin</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -204,7 +208,7 @@
         <!--Sign Up Page-->
         <scene sceneID="yNo-lC-2Oq">
             <objects>
-                <viewController title="Sign Up Page" id="SGa-H5-PFf" sceneMemberID="viewController">
+                <viewController title="Sign Up Page" id="SGa-H5-PFf" customClass="SignupSelectProfileViewController" customModule="anjoui" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EYu-d6-gGI"/>
                         <viewControllerLayoutGuide type="bottom" id="bdh-el-cUH"/>
@@ -213,42 +217,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFf-gI-4MJ">
-                                <rect key="frame" x="0.0" y="66" width="375" height="279"/>
-                                <color key="backgroundColor" red="0.99607843139999996" green="0.76862745099999996" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="40"/>
-                                <state key="normal" title="Cook">
-                                    <color key="titleColor" red="0.98823529409999999" green="0.50980392159999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="64" width="480" height="161"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="Ksb-7d-zSQ" kind="show" id="gQv-n8-mX0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxz-lC-8Vd">
-                                <rect key="frame" x="0.0" y="344" width="375" height="279"/>
-                                <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="40"/>
-                                <state key="normal" title="Dine">
-                                    <color key="titleColor" red="0.98823529409999999" green="0.50980392159999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="225" width="480" height="160"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="j0v-7A-AUV" kind="show" id="E9v-kl-4gw"/>
-                                </connections>
-                            </button>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nSL-o3-HRt">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nSL-o3-HRt">
+                                <rect key="frame" x="0.0" y="20" width="375" height="46"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <textAttributes key="titleTextAttributes">
                                     <fontDescription key="fontDescription" name="JosefinSans-Light" family="Josefin Sans" pointSize="30"/>
                                     <color key="textColor" red="0.98823529409999999" green="0.50980392159999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                    <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="select profile" id="pxn-Xj-rU7">
@@ -276,31 +251,127 @@
                                     <color key="titleColor" red="0.98823529409999999" green="0.50980392159999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="learnMoreTapped:" destination="SGa-H5-PFf" eventType="touchUpInside" id="uzU-gh-73n"/>
+                                </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFf-gI-4MJ">
+                                <rect key="frame" x="0.0" y="66" width="375" height="279"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="40"/>
+                                <state key="normal" backgroundImage="cook-kitchen.png">
+                                    <color key="titleColor" red="0.98823529409999999" green="0.50980392159999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="64" width="480" height="161"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="Ksb-7d-zSQ" kind="show" id="gQv-n8-mX0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Share your fresh, homemade meals." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="pcL-Tq-uJt">
+                                <rect key="frame" x="35" y="220" width="304" height="32"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Light" family="Josefin Sans" pointSize="28"/>
+                                <color key="textColor" red="1" green="0.62352943419999995" blue="0.066666670139999995" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxz-lC-8Vd">
+                                <rect key="frame" x="0.0" y="344" width="375" height="279"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="40"/>
+                                <state key="normal" backgroundImage="dine-food.png">
+                                    <color key="titleColor" red="0.98823529409999999" green="0.50980392159999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="225" width="480" height="160"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="j0v-7A-AUV" kind="show" id="E9v-kl-4gw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="uox-Yz-Fdh" userLabel="Dine">
+                                <rect key="frame" x="107" y="435" width="160" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="Iza-Pr-MpD"/>
+                                    <constraint firstAttribute="width" constant="93" id="sIc-1l-bTb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="50"/>
+                                <color key="textColor" red="1" green="0.62352943419999995" blue="0.066666670139999995" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enjoy meals made by home cooks." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="4ot-aF-N2O">
+                                <rect key="frame" x="35" y="498" width="304" height="43"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Light" family="Josefin Sans" pointSize="28"/>
+                                <color key="textColor" red="1" green="0.62352943419999995" blue="0.066666670139999995" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="vBX-Ki-N0u">
+                                <rect key="frame" x="107" y="148" width="160" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="fbC-mY-RRk"/>
+                                    <constraint firstAttribute="width" constant="93" id="iFp-ls-hsR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="50"/>
+                                <color key="textColor" red="1" green="0.62352943419999995" blue="0.066666670139999995" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="tFf-gI-4MJ" secondAttribute="centerX" id="6E6-O5-eUS"/>
-                            <constraint firstItem="TtX-jX-42h" firstAttribute="top" secondItem="nxz-lC-8Vd" secondAttribute="bottom" id="9aI-ie-K1G"/>
+                            <constraint firstItem="4ot-aF-N2O" firstAttribute="top" secondItem="uox-Yz-Fdh" secondAttribute="bottom" constant="8" id="8lr-13-gd1"/>
+                            <constraint firstItem="TtX-jX-42h" firstAttribute="top" secondItem="nxz-lC-8Vd" secondAttribute="bottom" constant="4" id="9aI-ie-K1G"/>
                             <constraint firstAttribute="trailing" secondItem="nxz-lC-8Vd" secondAttribute="trailing" id="BAm-Xb-moq"/>
+                            <constraint firstItem="uox-Yz-Fdh" firstAttribute="centerY" secondItem="nxz-lC-8Vd" secondAttribute="centerY" constant="-16" id="BgP-wr-tiu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4ot-aF-N2O" secondAttribute="trailing" constant="20" id="Ch1-rR-HSi"/>
+                            <constraint firstItem="vBX-Ki-N0u" firstAttribute="centerY" secondItem="tFf-gI-4MJ" secondAttribute="centerY" constant="-25" id="EqU-Lc-LeY"/>
                             <constraint firstAttribute="centerX" secondItem="TtX-jX-42h" secondAttribute="centerX" id="GKI-3k-RvN"/>
                             <constraint firstItem="nxz-lC-8Vd" firstAttribute="leading" secondItem="Lr6-EB-0PA" secondAttribute="leading" id="IVc-gQ-4jx"/>
+                            <constraint firstItem="nxz-lC-8Vd" firstAttribute="top" secondItem="pcL-Tq-uJt" secondAttribute="bottom" constant="101" id="KDI-gj-I0f"/>
+                            <constraint firstItem="4ot-aF-N2O" firstAttribute="centerY" secondItem="nxz-lC-8Vd" secondAttribute="centerY" constant="21" id="Kxb-0e-7v2"/>
+                            <constraint firstItem="pcL-Tq-uJt" firstAttribute="centerX" secondItem="vBX-Ki-N0u" secondAttribute="centerX" id="Lqf-iz-MUy"/>
                             <constraint firstItem="TtX-jX-42h" firstAttribute="leading" secondItem="Lr6-EB-0PA" secondAttribute="leadingMargin" constant="-16" id="MtH-Rt-Zri"/>
+                            <constraint firstItem="pcL-Tq-uJt" firstAttribute="top" secondItem="vBX-Ki-N0u" secondAttribute="bottom" constant="8" id="O16-Wy-8Rv"/>
+                            <constraint firstItem="uox-Yz-Fdh" firstAttribute="centerX" secondItem="nxz-lC-8Vd" secondAttribute="centerX" id="QEf-sX-egf"/>
+                            <constraint firstItem="4ot-aF-N2O" firstAttribute="centerX" secondItem="uox-Yz-Fdh" secondAttribute="centerX" id="QWt-RB-1c5"/>
                             <constraint firstItem="tFf-gI-4MJ" firstAttribute="top" secondItem="nSL-o3-HRt" secondAttribute="bottom" id="QoX-2s-Ccx"/>
+                            <constraint firstItem="uox-Yz-Fdh" firstAttribute="centerY" secondItem="nxz-lC-8Vd" secondAttribute="centerY" constant="-17.5" id="UYZ-SH-vq6"/>
                             <constraint firstItem="nSL-o3-HRt" firstAttribute="leading" secondItem="Lr6-EB-0PA" secondAttribute="leadingMargin" constant="-16" id="Wu3-k1-ctc"/>
                             <constraint firstAttribute="trailing" secondItem="tFf-gI-4MJ" secondAttribute="trailing" id="Xia-wG-fcN"/>
+                            <constraint firstItem="uox-Yz-Fdh" firstAttribute="centerY" secondItem="nxz-lC-8Vd" secondAttribute="centerY" constant="-16" id="Xlh-ix-N95"/>
                             <constraint firstItem="tFf-gI-4MJ" firstAttribute="leading" secondItem="Lr6-EB-0PA" secondAttribute="leading" id="Xwu-bm-8zP"/>
+                            <constraint firstItem="4ot-aF-N2O" firstAttribute="centerX" secondItem="uox-Yz-Fdh" secondAttribute="centerX" constant="-0.5" id="YD6-qd-wf8"/>
                             <constraint firstAttribute="centerX" secondItem="nxz-lC-8Vd" secondAttribute="centerX" id="YXi-fd-avY"/>
-                            <constraint firstItem="nxz-lC-8Vd" firstAttribute="top" secondItem="tFf-gI-4MJ" secondAttribute="bottom" id="bGe-sl-DI2"/>
+                            <constraint firstItem="pcL-Tq-uJt" firstAttribute="leading" secondItem="Lr6-EB-0PA" secondAttribute="leadingMargin" constant="19" id="aDF-BC-O7r"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pcL-Tq-uJt" secondAttribute="trailing" constant="20" id="aiJ-gc-AIq"/>
+                            <constraint firstItem="nxz-lC-8Vd" firstAttribute="top" secondItem="tFf-gI-4MJ" secondAttribute="bottom" constant="-1" id="bGe-sl-DI2"/>
+                            <constraint firstItem="pcL-Tq-uJt" firstAttribute="top" secondItem="EYu-d6-gGI" secondAttribute="bottom" constant="191" id="cbA-bw-MVG"/>
+                            <constraint firstItem="tFf-gI-4MJ" firstAttribute="centerX" secondItem="pcL-Tq-uJt" secondAttribute="centerX" id="fr1-EA-WCN"/>
+                            <constraint firstItem="4ot-aF-N2O" firstAttribute="top" secondItem="uox-Yz-Fdh" secondAttribute="bottom" constant="8" id="i2e-ie-Cge"/>
+                            <constraint firstItem="vBX-Ki-N0u" firstAttribute="top" secondItem="EYu-d6-gGI" secondAttribute="bottom" constant="128" id="iX5-Yi-nJH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TtX-jX-42h" secondAttribute="trailing" constant="-16" id="ilJ-8T-Nn4"/>
+                            <constraint firstItem="tFf-gI-4MJ" firstAttribute="top" secondItem="EYu-d6-gGI" secondAttribute="bottom" constant="46" id="mcD-N4-zcu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nSL-o3-HRt" secondAttribute="trailing" constant="-16" id="oEL-zD-WZu"/>
                             <constraint firstAttribute="centerX" secondItem="nxz-lC-8Vd" secondAttribute="centerX" id="okp-HW-uiG"/>
                             <constraint firstItem="bdh-el-cUH" firstAttribute="top" secondItem="TtX-jX-42h" secondAttribute="bottom" id="q6B-rY-rSn"/>
                             <constraint firstAttribute="centerX" secondItem="nSL-o3-HRt" secondAttribute="centerX" id="qk9-Kg-h3a"/>
+                            <constraint firstItem="4ot-aF-N2O" firstAttribute="leading" secondItem="Lr6-EB-0PA" secondAttribute="leadingMargin" constant="19" id="tIH-wo-KP3"/>
                             <constraint firstAttribute="centerX" secondItem="tFf-gI-4MJ" secondAttribute="centerX" id="vRJ-AA-fJo"/>
                             <constraint firstItem="nSL-o3-HRt" firstAttribute="top" secondItem="EYu-d6-gGI" secondAttribute="bottom" id="xtx-CA-Fye"/>
                             <constraint firstItem="tFf-gI-4MJ" firstAttribute="height" secondItem="nxz-lC-8Vd" secondAttribute="height" id="zIH-jh-Pt1"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fr1-EA-WCN"/>
+                                <exclude reference="cbA-bw-MVG"/>
+                                <exclude reference="KDI-gj-I0f"/>
+                                <exclude reference="Kxb-0e-7v2"/>
+                                <exclude reference="QWt-RB-1c5"/>
+                                <exclude reference="i2e-ie-Cge"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -570,7 +641,7 @@
                                             <constraint firstAttribute="height" constant="30" id="HoA-Mk-Qg5"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Address (Optional)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Twe-5i-iiW">
                                         <rect key="frame" x="29" y="414" width="158" height="21"/>
@@ -704,7 +775,7 @@
                                             <constraint firstAttribute="height" constant="30" id="v2K-2G-h4Z"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="example@anjoui.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gYA-k3-LPm">
                                         <rect key="frame" x="28" y="183" width="262" height="30"/>
@@ -1850,13 +1921,15 @@
     </scenes>
     <resources>
         <image name="Profile_Photo.jpg" width="960" height="960"/>
+        <image name="cook-kitchen.png" width="3264" height="2448"/>
+        <image name="dine-food.png" width="2275" height="1730"/>
         <image name="dish.jpg" width="960" height="720"/>
         <image name="main-screen.jpg" width="1936" height="2581"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="b4I-4f-NOs"/>
         <segue reference="vbV-aN-cIN"/>
-        <segue reference="Qsa-U3-zHF"/>
+        <segue reference="gIZ-rg-JR8"/>
         <segue reference="ziK-D7-Sg9"/>
     </inferredMetricsTieBreakers>
 </document>

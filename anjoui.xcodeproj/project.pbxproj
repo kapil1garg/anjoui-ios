@@ -14,6 +14,9 @@
 		000CA89A1B6E1D89005EDF55 /* logo-29pt-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000CA8951B6E1D89005EDF55 /* logo-29pt-2x.png */; };
 		000CA89B1B6E1D89005EDF55 /* logo-40pt-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000CA8961B6E1D89005EDF55 /* logo-40pt-2x.png */; };
 		000CA89C1B6E1D89005EDF55 /* logo-full.png in Resources */ = {isa = PBXBuildFile; fileRef = 000CA8971B6E1D89005EDF55 /* logo-full.png */; };
+		000CA8A01B6E30DD005EDF55 /* cook-kitchen.png in Resources */ = {isa = PBXBuildFile; fileRef = 000CA89F1B6E30DD005EDF55 /* cook-kitchen.png */; };
+		000CA8A21B6E31B5005EDF55 /* dine-food.png in Resources */ = {isa = PBXBuildFile; fileRef = 000CA8A11B6E31B5005EDF55 /* dine-food.png */; };
+		000CA8A41B6E36C2005EDF55 /* SignupSelectProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CA8A31B6E36C2005EDF55 /* SignupSelectProfileViewController.swift */; };
 		009016CA1B69DFED0019C0FB /* JosefinSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 009016921B69DFED0019C0FB /* JosefinSans-Bold.ttf */; };
 		009016CB1B69DFED0019C0FB /* JosefinSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 009016931B69DFED0019C0FB /* JosefinSans-BoldItalic.ttf */; };
 		009016CC1B69DFED0019C0FB /* JosefinSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 009016941B69DFED0019C0FB /* JosefinSans-Italic.ttf */; };
@@ -106,6 +109,9 @@
 		000CA8951B6E1D89005EDF55 /* logo-29pt-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-29pt-2x.png"; path = "anjoui/icons/logo-29pt-2x.png"; sourceTree = "<group>"; };
 		000CA8961B6E1D89005EDF55 /* logo-40pt-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-40pt-2x.png"; path = "anjoui/icons/logo-40pt-2x.png"; sourceTree = "<group>"; };
 		000CA8971B6E1D89005EDF55 /* logo-full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-full.png"; path = "anjoui/icons/logo-full.png"; sourceTree = "<group>"; };
+		000CA89F1B6E30DD005EDF55 /* cook-kitchen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cook-kitchen.png"; path = "anjoui/images/cook-kitchen.png"; sourceTree = "<group>"; };
+		000CA8A11B6E31B5005EDF55 /* dine-food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dine-food.png"; path = "anjoui/images/dine-food.png"; sourceTree = "<group>"; };
+		000CA8A31B6E36C2005EDF55 /* SignupSelectProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupSelectProfileViewController.swift; sourceTree = "<group>"; };
 		009016921B69DFED0019C0FB /* JosefinSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JosefinSans-Bold.ttf"; path = "anjoui/fonts/JosefinSans-Bold.ttf"; sourceTree = "<group>"; };
 		009016931B69DFED0019C0FB /* JosefinSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JosefinSans-BoldItalic.ttf"; path = "anjoui/fonts/JosefinSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		009016941B69DFED0019C0FB /* JosefinSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JosefinSans-Italic.ttf"; path = "anjoui/fonts/JosefinSans-Italic.ttf"; sourceTree = "<group>"; };
@@ -221,6 +227,8 @@
 		009016901B69DFD90019C0FB /* images */ = {
 			isa = PBXGroup;
 			children = (
+				000CA8A11B6E31B5005EDF55 /* dine-food.png */,
+				000CA89F1B6E30DD005EDF55 /* cook-kitchen.png */,
 				009017081B69E08F0019C0FB /* main-screen.jpg */,
 				009017021B69E0030019C0FB /* dish.jpg */,
 				009017031B69E0030019C0FB /* dish4.jpg */,
@@ -337,6 +345,7 @@
 				00F4576F1B6DDB57008E9AFF /* LoginViewController.swift */,
 				00F457711B6DDB62008E9AFF /* SignupCookViewController.swift */,
 				00F457731B6DDB6B008E9AFF /* SignupDinerViewController.swift */,
+				000CA8A31B6E36C2005EDF55 /* SignupSelectProfileViewController.swift */,
 			);
 			path = anjoui;
 			sourceTree = "<group>";
@@ -476,6 +485,7 @@
 				009016D41B69DFED0019C0FB /* JosefinSlab-Bold.ttf in Resources */,
 				000CA89B1B6E1D89005EDF55 /* logo-40pt-2x.png in Resources */,
 				009016E51B69DFED0019C0FB /* Lato-HeavyItalic.ttf in Resources */,
+				000CA8A21B6E31B5005EDF55 /* dine-food.png in Resources */,
 				000CA8921B6E1CEB005EDF55 /* logo-60pt-2x.png in Resources */,
 				009016E21B69DFED0019C0FB /* Lato-Hairline.ttf in Resources */,
 				009016D31B69DFED0019C0FB /* JosefinSans-ThinItalic.ttf in Resources */,
@@ -516,6 +526,7 @@
 				009017061B69E0030019C0FB /* dish4.jpg in Resources */,
 				009016FD1B69DFED0019C0FB /* Raleway-Regular.ttf in Resources */,
 				009016FA1B69DFED0019C0FB /* Raleway-LightItalic.ttf in Resources */,
+				000CA8A01B6E30DD005EDF55 /* cook-kitchen.png in Resources */,
 				009016DF1B69DFED0019C0FB /* Lato-BlackItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,6 +545,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				000CA8A41B6E36C2005EDF55 /* SignupSelectProfileViewController.swift in Sources */,
 				00F457741B6DDB6B008E9AFF /* SignupDinerViewController.swift in Sources */,
 				00EEEBD01B6DEB1D00EDE4F7 /* EntreeListTableViewController.swift in Sources */,
 				1E86D6D51B521208003F6736 /* ViewController.swift in Sources */,
