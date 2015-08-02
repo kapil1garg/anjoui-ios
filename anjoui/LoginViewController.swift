@@ -44,7 +44,6 @@ class LoginViewController: UIViewController {
                 }
                 
                 if (results.items.count != 0) {
-                    println(results.items[0])
                     let valid_pass = results.items[0]["password"] as! String
                     
                     if (hashed_user_pass == valid_pass) {

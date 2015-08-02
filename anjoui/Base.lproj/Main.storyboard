@@ -804,7 +804,7 @@
                                             <constraint firstAttribute="height" constant="30" id="EfF-g0-4RH"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UfL-FA-ebc">
                                         <rect key="frame" x="28" y="122" width="262" height="30"/>
@@ -1941,8 +1941,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="b4I-4f-NOs"/>
-        <segue reference="BPL-Kd-xed"/>
-        <segue reference="Qsa-U3-zHF"/>
+        <segue reference="KCv-2l-ij6"/>
+        <segue reference="gIZ-rg-JR8"/>
         <segue reference="ziK-D7-Sg9"/>
     </inferredMetricsTieBreakers>
 </document>

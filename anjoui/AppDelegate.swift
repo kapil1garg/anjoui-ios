@@ -43,27 +43,9 @@ extension String {
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var client = MSClient?()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        self.client = MSClient(
-            applicationURLString:"https://anjoui-test-kag.azure-mobile.net/",
-            applicationKey:"AxuhVPrruTGhtvLuvdBTBRnqXvlGAd91"
-        )
-        
-        let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        let client = delegate.client!
-        let item = ["text":"Awesome item"]
-        let itemTable = client.tableWithName("Item")
-//        itemTable.insert(item) {
-//            (insertedItem, error) in
-//            if (error != nil) {
-//                println("Error" + error.description);
-//            } else {
-//                println("Item inserted, id: " + (insertedItem["id"] as! String))
-//            }
-//        }
         return true
     }
 
