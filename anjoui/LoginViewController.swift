@@ -2,7 +2,6 @@
 //  LoginViewController.swift
 //  anjoui
 //
-//  Created by Kapil Garg on 8/1/15.
 //  Copyright (c) 2015 anjoui. All rights reserved.
 //
 
@@ -13,9 +12,12 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     
+    @IBAction func loginClick(sender: UIButton) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("Login loaded")
+
         // Do any additional setup after loading the view.
     }
 

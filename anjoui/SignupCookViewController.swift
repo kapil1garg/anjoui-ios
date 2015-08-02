@@ -2,7 +2,6 @@
 //  SignupCookViewController.swift
 //  anjoui
 //
-//  Created by Kapil Garg on 8/1/15.
 //  Copyright (c) 2015 anjoui. All rights reserved.
 //
 
@@ -17,9 +16,13 @@ class SignupCookViewController: UIViewController {
     @IBOutlet weak var txtPhoneNumber: UITextField!
     @IBOutlet weak var txtAddress: UITextField!
     
+    @IBAction func cookSignup(sender: UIButton) {
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("Cook screen loaded")
+
         // Do any additional setup after loading the view.
     }
 

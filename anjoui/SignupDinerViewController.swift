@@ -2,7 +2,6 @@
 //  SignupDinerViewController.swift
 //  anjoui
 //
-//  Created by Kapil Garg on 8/1/15.
 //  Copyright (c) 2015 anjoui. All rights reserved.
 //
 
@@ -16,9 +15,13 @@ class SignupDinerViewController: UIViewController {
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtPhoneNumber: UITextField!
     @IBOutlet weak var txtAddress: UITextField!
+    
+    @IBAction func dinerSignup(sender: UIButton) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("Diner screen loaded")
+
         // Do any additional setup after loading the view.
     }
 
