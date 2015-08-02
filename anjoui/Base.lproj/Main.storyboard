@@ -10,7 +10,7 @@
             <string>JosefinSans-Light</string>
             <string>JosefinSans-Light</string>
         </mutableArray>
-        <mutableArray key="JosefinSans-SemiBoldItalic.ttf">
+        <mutableArray key="JosefinSans-SemiBold.ttf">
             <string>JosefinSans-SemiBold</string>
             <string>JosefinSans-SemiBold</string>
         </mutableArray>
@@ -1852,9 +1852,9 @@
         <image name="main-screen.jpg" width="1936" height="2581"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ziK-D7-Sg9"/>
         <segue reference="b4I-4f-NOs"/>
-        <segue reference="rc4-Em-wAB"/>
+        <segue reference="KCv-2l-ij6"/>
         <segue reference="kG2-Sn-itb"/>
+        <segue reference="ziK-D7-Sg9"/>
     </inferredMetricsTieBreakers>
 </document>

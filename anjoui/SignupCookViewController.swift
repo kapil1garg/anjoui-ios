@@ -8,6 +8,8 @@
 import UIKit
 
 class SignupCookViewController: UIViewController {
+    
+    var client = MSClient?()
 
     @IBOutlet weak var txtFirstName: UITextField!
     @IBOutlet weak var txtLastName: UITextField!
@@ -17,12 +19,15 @@ class SignupCookViewController: UIViewController {
     @IBOutlet weak var txtAddress: UITextField!
     
     @IBAction func cookSignup(sender: UIButton) {
+        println("Cook Signup")
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.client = MSClient(
+            applicationURLString:"https://anjoui-test-ale.azure-mobile.net/",
+            applicationKey:"EVLaGLPcRrWygXxmjjpYFviRlsfUgE86"
+        )
         // Do any additional setup after loading the view.
     }
 

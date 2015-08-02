@@ -9,6 +9,8 @@ import UIKit
 
 class SignupDinerViewController: UIViewController {
 
+    var client = MSClient?()
+    
     @IBOutlet weak var txtFirstName: UITextField!
     @IBOutlet weak var txtLastName: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
@@ -21,7 +23,10 @@ class SignupDinerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.client = MSClient(
+            applicationURLString:"https://anjoui-test-ale.azure-mobile.net/",
+            applicationKey:"EVLaGLPcRrWygXxmjjpYFviRlsfUgE86"
+        )
         // Do any additional setup after loading the view.
     }
 

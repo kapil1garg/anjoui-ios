@@ -8,16 +8,22 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
+    var client = MSClient?()
 
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     
     @IBAction func loginClick(sender: UIButton) {
+
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.client = MSClient(
+            applicationURLString:"https://anjoui-test-ale.azure-mobile.net/",
+            applicationKey:"EVLaGLPcRrWygXxmjjpYFviRlsfUgE86"
+        )
         // Do any additional setup after loading the view.
     }
 
