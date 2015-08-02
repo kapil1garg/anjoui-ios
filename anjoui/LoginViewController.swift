@@ -16,10 +16,10 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginClick(sender: UIButton) {
         // Authenticate user
-        var user_email:String = (txtEmail.text as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-        var user_pass:String = txtPassword.text as String
+        let user_email:String = (txtEmail.text as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        let hashed_user_pass:String = ("Add some salt" + (txtPassword.text as String) + "maybe some pepper").MD5()
         
-        if (user_email == "" || user_pass == "") {
+        if (user_email == "" || hashed_user_pass == "") {
             var alertView:UIAlertView = UIAlertView()
             alertView.title = "Please enter Email and Password"
             alertView.message = "Email and Password fields cannot be blank."
@@ -36,22 +36,18 @@ class LoginViewController: UIViewController {
         } else {
             let usertable = self.client!.tableWithName("users")
             
-            let hashed_pass = ("Add some salt" + user_pass + "maybe some pepper").MD5()
-            
-            var users = []
-            
             let userCheckPredicate = NSPredicate(format: "email == %@", user_email)
             usertable!.readWithPredicate(userCheckPredicate, completion: {
                 (results, error) in
                 if (error != nil)  {
                     NSLog(String(format: "%@", error.debugDescription))
                 }
-                users = results.items as! [Dictionary<String, String>]
                 
-                if (users.count != 0) {
-                    let valid_pass = users[0]["password"] as! String
+                if (results.items.count != 0) {
+                    println(results.items[0])
+                    let valid_pass = results.items[0]["password"] as! String
                     
-                    if (hashed_pass == valid_pass) {
+                    if (hashed_user_pass == valid_pass) {
                         println("User is valid")
                         self.performSegueWithIdentifier("login_user", sender: nil)
                     } else {
