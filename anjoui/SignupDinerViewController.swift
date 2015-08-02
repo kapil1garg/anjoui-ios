@@ -19,6 +19,7 @@ class SignupDinerViewController: UIViewController {
     @IBOutlet weak var txtAddress: UITextField!
     
     @IBAction func dinerSignup(sender: UIButton) {
+        performSegueWithIdentifier("diner_signup", sender: nil)
     }
     
     override func viewDidLoad() {

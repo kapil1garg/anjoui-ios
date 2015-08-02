@@ -122,14 +122,14 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main-screen.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QZN-xt-4Ch">
-                                <rect key="frame" x="0.0" y="0.0" width="627" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="347" height="800"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Healthy homemade food available to everyone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJB-LW-KyX">
-                                <rect key="frame" x="183" y="242" width="235" height="115"/>
+                                <rect key="frame" x="43" y="342" width="235" height="115"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="115" id="IiL-5E-bfp"/>
                                     <constraint firstAttribute="width" constant="235" id="xub-5l-PPw"/>
@@ -139,7 +139,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85R-Sh-XJ5">
-                                <rect key="frame" x="0.0" y="555" width="300" height="45"/>
+                                <rect key="frame" x="0.0" y="755" width="160" height="45"/>
                                 <color key="backgroundColor" red="0.99607843137254903" green="0.7686274509803922" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="zVN-O6-Yyd"/>
@@ -154,7 +154,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukd-mS-S3s">
-                                <rect key="frame" x="300" y="555" width="300" height="45"/>
+                                <rect key="frame" x="160" y="755" width="160" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="CcN-wS-0V3"/>
@@ -169,7 +169,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="anjoui" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5a-yU-pvr">
-                                <rect key="frame" x="202" y="176" width="196" height="58"/>
+                                <rect key="frame" x="62" y="176" width="196" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="196" id="eFj-Dm-V48"/>
                                 </constraints>
@@ -378,7 +378,6 @@
                                 </state>
                                 <connections>
                                     <action selector="loginClick:" destination="4Ja-o4-GC5" eventType="touchUpInside" id="9Zm-OF-lMn"/>
-                                    <segue destination="Pvq-Bv-4XW" kind="show" id="kG2-Sn-itb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8N-Bh-afm">
@@ -430,6 +429,7 @@
                     <connections>
                         <outlet property="txtEmail" destination="cVQ-dI-efS" id="jeB-gZ-hJR"/>
                         <outlet property="txtPassword" destination="Bwu-YN-uhl" id="fus-6s-ld4"/>
+                        <segue destination="Pvq-Bv-4XW" kind="show" identifier="login_user" id="NWE-hI-e8M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6c6-rU-4b8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -646,11 +646,12 @@
                         <outlet property="txtLastName" destination="uns-Am-QaJ" id="uD1-69-x2A"/>
                         <outlet property="txtPassword" destination="UX9-Dp-zRq" id="oy4-nc-rgK"/>
                         <outlet property="txtPhoneNumber" destination="32H-MP-3fg" id="zw3-wD-9g7"/>
+                        <segue destination="Pvq-Bv-4XW" kind="show" identifier="cook_signup" id="Qsa-U3-zHF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Irl-Q7-ta4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="143" y="-480"/>
+            <point key="canvasLocation" x="-83" y="382"/>
         </scene>
         <!--Dine Sign Up Page-->
         <scene sceneID="cpp-5Z-UYJ">
@@ -854,11 +855,12 @@
                         <outlet property="txtLastName" destination="UfL-FA-ebc" id="8Ys-j8-aGn"/>
                         <outlet property="txtPassword" destination="140-Dd-u9e" id="SMf-TC-QlH"/>
                         <outlet property="txtPhoneNumber" destination="Zd4-2m-RyA" id="Me6-C4-WS5"/>
+                        <segue destination="Pvq-Bv-4XW" kind="show" identifier="diner_signup" id="gIZ-rg-JR8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wgy-33-mSx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-309" y="271"/>
+            <point key="canvasLocation" x="-468" y="879"/>
         </scene>
         <!--Diner Main Page-->
         <scene sceneID="wrE-7T-VL6">
@@ -884,7 +886,7 @@
                                         <barButtonItem key="leftBarButtonItem" title="log out" id="oGD-Q7-Y2s">
                                             <color key="tintColor" red="0.98823529409999999" green="0.50980392159999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
-                                                <segue destination="4Ja-o4-GC5" kind="show" id="Odm-GA-6lO"/>
+                                                <segue destination="vXZ-lx-hvc" kind="show" id="vmC-4z-n1y"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="三" id="rWn-mE-DQ4">
@@ -956,7 +958,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xin-Df-j6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33" y="1188"/>
+            <point key="canvasLocation" x="163" y="1266"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="i5C-nn-myo">
@@ -1853,8 +1855,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="b4I-4f-NOs"/>
-        <segue reference="KCv-2l-ij6"/>
-        <segue reference="kG2-Sn-itb"/>
+        <segue reference="vbV-aN-cIN"/>
+        <segue reference="Qsa-U3-zHF"/>
         <segue reference="ziK-D7-Sg9"/>
     </inferredMetricsTieBreakers>
 </document>

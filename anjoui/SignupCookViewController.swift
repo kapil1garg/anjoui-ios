@@ -19,7 +19,7 @@ class SignupCookViewController: UIViewController {
     @IBOutlet weak var txtAddress: UITextField!
     
     @IBAction func cookSignup(sender: UIButton) {
-        println("Cook Signup")
+        performSegueWithIdentifier("cook_signup", sender: nil)
     }
     
     override func viewDidLoad() {
