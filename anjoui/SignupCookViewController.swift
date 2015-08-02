@@ -49,7 +49,7 @@ class SignupCookViewController: UIViewController {
                             "phone_number": user_phone_number,
                             "address": user_address,
                             "profile": "cook"]
-
+            
             // check if email is in data base
             let userCheckPredicate = NSPredicate(format: "email == %@", user_email)
             usertable!.readWithPredicate(userCheckPredicate, completion: {
@@ -67,11 +67,11 @@ class SignupCookViewController: UIViewController {
                             println("Item inserted, id: " + (insertedItem["id"] as! String))
                             self.performSegueWithIdentifier("cook_signup", sender: nil)
                             var alertView:UIAlertView = UIAlertView()
-                                    alertView.title = "Welcome to anjoui!"
-                                    alertView.message = "Congratulations! Your cook account was created successfully."
-                                    alertView.delegate = self
-                                    alertView.addButtonWithTitle("OK")
-                                    alertView.show()
+                            alertView.title = "Welcome to anjoui!"
+                            alertView.message = "Congratulations! Your cook account was created successfully."
+                            alertView.delegate = self
+                            alertView.addButtonWithTitle("OK")
+                            alertView.show()
                         }
                     }
                 } else {

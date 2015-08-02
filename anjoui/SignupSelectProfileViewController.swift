@@ -2,7 +2,6 @@
 //  SignupSelectProfileViewController.swift
 //  anjoui
 //
-//  Created by Kapil Garg on 8/2/15.
 //  Copyright (c) 2015 anjoui. All rights reserved.
 //
 

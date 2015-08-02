@@ -8,7 +8,7 @@
 import UIKit
 
 class SignupDinerViewController: UIViewController {
-
+    
     var client = MSClient?()
     
     @IBOutlet weak var txtFirstName: UITextField!
@@ -43,13 +43,13 @@ class SignupDinerViewController: UIViewController {
         } else {
             let usertable = self.client!.tableWithName("users")
             let new_user = ["first": user_first_name,
-                "last": user_last_name,
-                "email": user_email,
-                "password": hashed_user_pass,
-                "phone_number": user_phone_number,
-                "address": user_address,
-                "profile": "diner"]
-            
+                            "last": user_last_name,
+                            "email": user_email,
+                            "password": hashed_user_pass,
+                            "phone_number": user_phone_number,
+                            "address": user_address,
+                            "profile": "diner"]
+                        
             // check if email is in data base
             let userCheckPredicate = NSPredicate(format: "email == %@", user_email)
             usertable!.readWithPredicate(userCheckPredicate, completion: {
@@ -94,21 +94,21 @@ class SignupDinerViewController: UIViewController {
         )
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
     }
     */
-
+    
 }

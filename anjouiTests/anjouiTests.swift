@@ -2,7 +2,6 @@
 //  anjouiTests.swift
 //  anjouiTests
 //
-//  Created by Kevin Li on 7/11/15.
 //  Copyright (c) 2015 anjoui. All rights reserved.
 //
 
