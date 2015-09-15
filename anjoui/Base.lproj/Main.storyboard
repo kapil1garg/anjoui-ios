@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MxV-pL-Gxt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="POR-jc-QQd">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <mutableArray key="JosefinSans-BoldItalic.ttf">
+            <string>JosefinSans-BoldItalic</string>
+        </mutableArray>
         <mutableArray key="JosefinSans-Light.ttf">
+            <string>JosefinSans-Light</string>
             <string>JosefinSans-Light</string>
             <string>JosefinSans-Light</string>
             <string>JosefinSans-Light</string>
@@ -17,6 +21,7 @@
             <string>JosefinSans-SemiBold</string>
         </mutableArray>
         <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
             <string>Lato-Regular</string>
             <string>Lato-Regular</string>
             <string>Lato-Regular</string>
@@ -1997,6 +2002,9 @@
                                         <state key="normal" title="CONFIRM">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="POR-jc-QQd" kind="show" id="pmr-IZ-kfc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -2124,6 +2132,77 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mz1-Z3-4Gc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2270" y="675"/>
+        </scene>
+        <!--Confirmation Page-->
+        <scene sceneID="6hq-vW-dcA">
+            <objects>
+                <viewController title="Confirmation Page" id="POR-jc-QQd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5TL-Kq-ufg"/>
+                        <viewControllerLayoutGuide type="bottom" id="abf-cC-anH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P5b-Wh-FYP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wPg-p5-e8q">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="JosefinSans-Light" family="Josefin Sans" pointSize="30"/>
+                                    <color key="textColor" red="0.98823529409999999" green="0.50980392159999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="anjoui" id="iqm-KG-XtN">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="zU1-d0-44R">
+                                            <color key="tintColor" red="0.98823529409999999" green="0.50980392159999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="三" id="pce-Ez-DZE">
+                                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Thank you!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ua1-ph-hkn">
+                                <rect key="frame" x="53" y="94" width="215" height="54"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-BoldItalic" family="Josefin Sans" pointSize="45"/>
+                                <color key="textColor" red="0.98823529409999999" green="0.50980392159999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Let's anjoui!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZpR-zb-UTA">
+                                <rect key="frame" x="82" y="383" width="157" height="42"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Light" family="Josefin Sans" pointSize="30"/>
+                                <color key="textColor" red="0.98823529409999999" green="0.50980392159999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FkM-hI-RN4">
+                                <rect key="frame" x="30" y="156" width="262" height="191"/>
+                                <string key="text">Dish name: Lotus Root with Edemame Quantity: 1
+Pick-up at: 12:30 pm  Cook contact info Address: 639 Library Pl, Evanston Phone number: 224 578 6277</string>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wPg-p5-e8q" firstAttribute="width" secondItem="P5b-Wh-FYP" secondAttribute="width" id="QzP-Vm-pUk"/>
+                            <constraint firstAttribute="centerX" secondItem="wPg-p5-e8q" secondAttribute="centerX" id="RFY-Jh-2e3"/>
+                            <constraint firstItem="abf-cC-anH" firstAttribute="top" secondItem="ZpR-zb-UTA" secondAttribute="bottom" constant="75" id="W8J-Qp-Hgw"/>
+                            <constraint firstAttribute="centerX" secondItem="FkM-hI-RN4" secondAttribute="centerX" id="bf6-Tx-nbB"/>
+                            <constraint firstAttribute="centerX" secondItem="ZpR-zb-UTA" secondAttribute="centerX" id="fEi-b2-GO2"/>
+                            <constraint firstAttribute="centerX" secondItem="Ua1-ph-hkn" secondAttribute="centerX" id="mcI-dr-JcT"/>
+                            <constraint firstItem="FkM-hI-RN4" firstAttribute="top" secondItem="Ua1-ph-hkn" secondAttribute="bottom" constant="40" id="s5Z-ZV-8Wk"/>
+                            <constraint firstItem="wPg-p5-e8q" firstAttribute="top" secondItem="5TL-Kq-ufg" secondAttribute="bottom" id="sXb-Eb-iaX"/>
+                            <constraint firstItem="wPg-p5-e8q" firstAttribute="leading" secondItem="P5b-Wh-FYP" secondAttribute="leadingMargin" constant="-16" id="tdk-KE-kOW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wPg-p5-e8q" secondAttribute="trailing" constant="-16" id="vv4-Z7-rjo"/>
+                            <constraint firstAttribute="centerY" secondItem="FkM-hI-RN4" secondAttribute="centerY" id="zTK-Dz-Jas"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sa3-lh-FLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2755" y="699"/>
         </scene>
         <!--Cook Profile-->
         <scene sceneID="ggd-6Q-rvX">
@@ -2341,12 +2420,12 @@
         <image name="main-screen.jpg" width="1936" height="2581"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oh5-IE-ETO"/>
         <segue reference="ZfX-MU-vyg"/>
         <segue reference="AVK-yv-1QN"/>
         <segue reference="BPL-Kd-xed"/>
         <segue reference="b4I-4f-NOs"/>
         <segue reference="bTI-xQ-bNH"/>
         <segue reference="ziK-D7-Sg9"/>
+        <segue reference="sXz-f7-QNd"/>
     </inferredMetricsTieBreakers>
 </document>
