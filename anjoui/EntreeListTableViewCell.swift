@@ -11,21 +11,11 @@ class EntreeListTableViewCell: UITableViewCell {
     
     // MARK: properties
     
-    @IBOutlet weak var dishPrice: UILabel!
-    @IBOutlet weak var dishPhoto: UIButton!
-    @IBOutlet weak var distanceAndTime: UILabel!
-    @IBOutlet weak var dishName: UIButton!
-    @IBOutlet weak var cookProfile: UIButton!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    @IBOutlet var dishPrice: UILabel!
+    @IBOutlet var dishPic: UIImageView!
+    @IBOutlet var distanceAndTime: UILabel!
+    @IBOutlet var dishName: UILabel!
+    @IBOutlet var cookProfile: UIImageView!
 
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
 
 }

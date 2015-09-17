@@ -32,24 +32,27 @@ class EntreeListTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return 1
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
+        let entrees = tableView.dequeueReusableCellWithIdentifier("EntreeListTableViewCell", forIndexPath: indexPath) as! EntreeListTableViewCell
+        
+        entrees.dishPic.image = UIImage(named:"dish.jpg")
+        entrees.dishName.text = "Lotus Root with Edemame"
+        entrees.dishPrice.text = "$10"
+        entrees.distanceAndTime.text = "0.9 mile|12:30pm-1:30pm"
 
-        // Configure the cell...
-
-        return cell
+        return entrees
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
