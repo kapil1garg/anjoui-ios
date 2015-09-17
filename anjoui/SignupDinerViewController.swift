@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class SignupDinerViewController: UIViewController {
     
     var client = MSClient?()
@@ -27,16 +28,23 @@ class SignupDinerViewController: UIViewController {
         let user_address:String = txtAddress.text! as String
         
         if (user_first_name == "" || user_last_name == "" || user_email == "" || hashed_user_pass == "") {
-            var alertView:UIAlertView = UIAlertView()
+            let alertView:UIAlertView = UIAlertView()
             alertView.title = "Required fields blank"
             alertView.message = "Please fill First Name, Last Name, Email, and Password fields"
             alertView.delegate = self
             alertView.addButtonWithTitle("OK")
             alertView.show()
         } else if (!user_email.isValidEmail()) {
-            var alertView:UIAlertView = UIAlertView()
+            let alertView:UIAlertView = UIAlertView()
             alertView.title = "Invalid email"
             alertView.message = "Email must be in the format: example@anjoui.com"
+            alertView.delegate = self
+            alertView.addButtonWithTitle("OK")
+            alertView.show()
+        } else if (user_phone_number != "" && !user_phone_number.isValidPhoneNumber()) {
+            let alertView:UIAlertView = UIAlertView()
+            alertView.title = "Invalid phone number"
+            alertView.message = "Phone number must be 10 numeric digits without any special or alphabetical characters."
             alertView.delegate = self
             alertView.addButtonWithTitle("OK")
             alertView.show()
@@ -66,7 +74,7 @@ class SignupDinerViewController: UIViewController {
                         } else {
                             print("Item inserted, id: " + (insertedItem["id"] as! String))
                             self.performSegueWithIdentifier("diner_signup", sender: nil)
-                            var alertView:UIAlertView = UIAlertView()
+                            let alertView:UIAlertView = UIAlertView()
                             alertView.title = "Welcome to anjoui!"
                             alertView.message = "Congratulations! Your diner account was created successfully."
                             alertView.delegate = self
@@ -75,7 +83,7 @@ class SignupDinerViewController: UIViewController {
                         }
                     }
                 } else {
-                    var alertView:UIAlertView = UIAlertView()
+                    let alertView:UIAlertView = UIAlertView()
                     alertView.title = "Email already exists"
                     alertView.message = "This email already exists. Please use another email or log in."
                     alertView.delegate = self

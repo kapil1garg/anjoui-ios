@@ -17,7 +17,7 @@
             <string>JosefinSans-Light</string>
             <string>JosefinSans-Light</string>
         </mutableArray>
-        <mutableArray key="JosefinSans-SemiBold.ttf">
+        <mutableArray key="JosefinSans-SemiBoldItalic.ttf">
             <string>JosefinSans-SemiBold</string>
             <string>JosefinSans-SemiBold</string>
         </mutableArray>
@@ -227,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1480" y="732"/>
+            <point key="canvasLocation" x="-3580" y="908"/>
         </scene>
         <!--Sign Up Page-->
         <scene sceneID="yNo-lC-2Oq">
@@ -414,7 +414,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8A5-Zd-HwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-883.5" y="-17.5"/>
+            <point key="canvasLocation" x="-2870.5" y="914.5"/>
         </scene>
         <!--Log In Page-->
         <scene sceneID="pdZ-qa-VBt">
@@ -542,7 +542,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6c6-rU-4b8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-911" y="1124"/>
+            <point key="canvasLocation" x="-2843" y="1872"/>
         </scene>
         <!--Cook Sign Up Page-->
         <scene sceneID="Dvk-TB-dfP">
@@ -652,7 +652,6 @@
                                         </state>
                                         <connections>
                                             <action selector="cookSignup:" destination="Ksb-7d-zSQ" eventType="touchUpInside" id="fjU-OW-Lal"/>
-                                            <segue destination="Ftp-PR-qJA" kind="show" id="eCX-Ot-1fw"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="By signing up, you are agreeing to anjoui's Privacy Policy and Terms of Service" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxW-XB-rrX">
@@ -755,11 +754,12 @@
                         <outlet property="txtLastName" destination="uns-Am-QaJ" id="uD1-69-x2A"/>
                         <outlet property="txtPassword" destination="UX9-Dp-zRq" id="oy4-nc-rgK"/>
                         <outlet property="txtPhoneNumber" destination="32H-MP-3fg" id="zw3-wD-9g7"/>
+                        <segue destination="Ftp-PR-qJA" kind="show" identifier="cook_signup" id="VzO-OR-XhK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Irl-Q7-ta4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-83" y="382"/>
+            <point key="canvasLocation" x="-1892" y="1070"/>
         </scene>
         <!--Upload Dish - Entree Details-->
         <scene sceneID="XO5-03-9fy">
@@ -955,7 +955,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hBx-J2-wiA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="516" y="113"/>
+            <point key="canvasLocation" x="-1101" y="373"/>
         </scene>
         <!--Upload Dish - Serving Details-->
         <scene sceneID="2wD-BR-YmQ">
@@ -1141,7 +1141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z17-9l-eTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="965" y="54"/>
+            <point key="canvasLocation" x="-243" y="373"/>
         </scene>
         <!--Dine Sign Up Page-->
         <scene sceneID="cpp-5Z-UYJ">
@@ -1350,7 +1350,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wgy-33-mSx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-468" y="879"/>
+            <point key="canvasLocation" x="-1892" y="120"/>
         </scene>
         <!--Diner Main Page-->
         <scene sceneID="wrE-7T-VL6">
@@ -1443,7 +1443,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xin-Df-j6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="163" y="1266"/>
+            <point key="canvasLocation" x="-1101" y="1894"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="i5C-nn-myo">
@@ -1458,7 +1458,7 @@
                                 <rect key="frame" x="0.0" y="22" width="320" height="240"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="54A-OS-HOZ" id="8i1-Vy-zSx">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="239.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="$10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiI-Rw-zVY">
@@ -1522,7 +1522,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4my-lP-ZWO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="555" y="1749"/>
+            <point key="canvasLocation" x="-721" y="-867"/>
         </scene>
         <!--Dish Detail-->
         <scene sceneID="Gsv-d6-210">
@@ -1747,7 +1747,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3LT-Bp-e9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1100" y="953"/>
+            <point key="canvasLocation" x="436" y="373"/>
         </scene>
         <!--Reserve Details-->
         <scene sceneID="GTt-bK-uuW">
@@ -2116,7 +2116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mz1-Z3-4Gc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2270" y="675"/>
+            <point key="canvasLocation" x="1258" y="373"/>
         </scene>
         <!--Confirmation Page-->
         <scene sceneID="6hq-vW-dcA">
@@ -2187,7 +2187,7 @@ Pick-up at: 12:30 pm  Cook contact info Address: 639 Library Pl, Evanston�
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sa3-lh-FLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2755" y="699"/>
+            <point key="canvasLocation" x="1947" y="373"/>
         </scene>
         <!--Cook Profile-->
         <scene sceneID="ggd-6Q-rvX">
@@ -2394,7 +2394,7 @@ Pick-up at: 12:30 pm  Cook contact info Address: 639 Library Pl, Evanston�
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q5P-8C-fiK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1536" y="1775"/>
+            <point key="canvasLocation" x="436" y="1563"/>
         </scene>
     </scenes>
     <resources>
@@ -2407,10 +2407,10 @@ Pick-up at: 12:30 pm  Cook contact info Address: 639 Library Pl, Evanston�
     <inferredMetricsTieBreakers>
         <segue reference="ziK-D7-Sg9"/>
         <segue reference="sXz-f7-QNd"/>
-        <segue reference="bTI-xQ-bNH"/>
-        <segue reference="ZfX-MU-vyg"/>
-        <segue reference="AVK-yv-1QN"/>
+        <segue reference="gIZ-rg-JR8"/>
         <segue reference="BPL-Kd-xed"/>
+        <segue reference="AVK-yv-1QN"/>
+        <segue reference="VzO-OR-XhK"/>
         <segue reference="b4I-4f-NOs"/>
     </inferredMetricsTieBreakers>
 </document>

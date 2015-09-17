@@ -39,6 +39,17 @@ extension String {
     }
 }
 
+// phone number verifier
+extension String {
+    func isValidPhoneNumber() -> Bool {
+        let testStr = self as String
+        let phoneRegEx = "[0-9]{10}"
+        
+        let phoneTest = NSPredicate(format: "SELF MATCHES %@", phoneRegEx)
+        return phoneTest.evaluateWithObject(testStr)
+    }
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
