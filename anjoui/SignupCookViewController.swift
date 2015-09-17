@@ -19,12 +19,12 @@ class SignupCookViewController: UIViewController {
     @IBOutlet weak var txtAddress: UITextField!
     
     @IBAction func cookSignup(sender: UIButton) {
-        let user_first_name:String = (txtFirstName.text as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-        let user_last_name:String = (txtLastName.text as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-        let user_email:String = (txtEmail.text as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-        let hashed_user_pass:String = ("Add some salt" + (txtPassword.text as String) + "maybe some pepper").MD5()
-        let user_phone_number:String = txtPhoneNumber.text
-        let user_address:String = txtAddress.text as String
+        let user_first_name:String = (txtFirstName.text! as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        let user_last_name:String = (txtLastName.text! as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        let user_email:String = (txtEmail.text! as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        let hashed_user_pass:String = ("Add some salt" + (txtPassword.text! as String) + "maybe some pepper").MD5()
+        let user_phone_number:String = txtPhoneNumber.text!
+        let user_address:String = txtAddress.text! as String
         
         if (user_first_name == "" || user_last_name == "" || user_email == "" || hashed_user_pass == "") {
             var alertView:UIAlertView = UIAlertView()

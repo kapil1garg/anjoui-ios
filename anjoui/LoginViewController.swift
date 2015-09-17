@@ -16,8 +16,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginClick(sender: UIButton) {
         // Authenticate user
-        let user_email:String = (txtEmail.text as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-        let hashed_user_pass:String = ("Add some salt" + (txtPassword.text as String) + "maybe some pepper").MD5()
+        let user_email:String = (txtEmail.text! as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        let hashed_user_pass:String = ("Add some salt" + (txtPassword.text! as String) + "maybe some pepper").MD5()
         
         if (user_email == "" || hashed_user_pass == "") {
             var alertView:UIAlertView = UIAlertView()
