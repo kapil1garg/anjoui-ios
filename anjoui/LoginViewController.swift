@@ -47,7 +47,7 @@ class LoginViewController: UIViewController {
                     let valid_pass = results.items[0]["password"] as! String
                     
                     if (hashed_user_pass == valid_pass) {
-                        println("User is valid")
+                        print("User is valid")
                         self.performSegueWithIdentifier("login_user", sender: nil)
                     } else {
                         var alertView:UIAlertView = UIAlertView()

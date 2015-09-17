@@ -62,9 +62,9 @@ class SignupDinerViewController: UIViewController {
                     usertable.insert(new_user) {
                         (insertedItem, error) in
                         if (error != nil) {
-                            println("Error" + error.description);
+                            print("Error" + error.description);
                         } else {
-                            println("Item inserted, id: " + (insertedItem["id"] as! String))
+                            print("Item inserted, id: " + (insertedItem["id"] as! String))
                             self.performSegueWithIdentifier("diner_signup", sender: nil)
                             var alertView:UIAlertView = UIAlertView()
                             alertView.title = "Welcome to anjoui!"

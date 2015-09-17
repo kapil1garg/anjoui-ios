@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OU9-up-h9P">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OU9-up-h9P">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -16,7 +17,7 @@
             <string>JosefinSans-Light</string>
             <string>JosefinSans-Light</string>
         </mutableArray>
-        <mutableArray key="JosefinSans-SemiBoldItalic.ttf">
+        <mutableArray key="JosefinSans-SemiBold.ttf">
             <string>JosefinSans-SemiBold</string>
             <string>JosefinSans-SemiBold</string>
         </mutableArray>
@@ -1454,8 +1455,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EntreeListTableViewCell" rowHeight="240" id="54A-OS-HOZ" customClass="EntreeListTableViewCell" customModule="anjoui" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="22" width="320" height="240"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="54A-OS-HOZ" id="8i1-Vy-zSx">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="239.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="$10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiI-Rw-zVY">
@@ -1505,7 +1508,6 @@
                                     <outlet property="cookProfile" destination="ym4-Sx-1Jr" id="9Fn-74-8FD"/>
                                     <outlet property="dishName" destination="O3j-at-uM2" id="Unk-Ni-Cki"/>
                                     <outlet property="dishPic" destination="Bfd-bw-sMy" id="XK2-fy-Phx"/>
-                                    <outlet property="dishPrice" destination="kiI-Rw-zVY" id="4AT-Eg-UoU"/>
                                     <outlet property="distanceAndTime" destination="xzS-eR-B4N" id="565-1Y-A8l"/>
                                 </connections>
                             </tableViewCell>

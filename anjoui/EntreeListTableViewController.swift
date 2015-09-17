@@ -43,7 +43,7 @@ class EntreeListTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let entrees = tableView.dequeueReusableCellWithIdentifier("EntreeListTableViewCell", forIndexPath: indexPath) as! EntreeListTableViewCell
+        let entrees = tableView.dequeueReusableCellWithIdentifier("EntreeListTableViewCell") as! EntreeListTableViewCell
         
         entrees.dishPic.image = UIImage(named:"dish.jpg")
         entrees.dishName.text = "Lotus Root with Edemame"
