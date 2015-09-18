@@ -17,5 +17,4 @@ class EntreeListTableViewCell: UITableViewCell {
     @IBOutlet var dishName: UILabel!
     @IBOutlet var cookProfile: UIImageView!
 
-
 }
