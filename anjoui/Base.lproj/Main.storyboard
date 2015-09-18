@@ -754,12 +754,12 @@
                         <outlet property="txtLastName" destination="uns-Am-QaJ" id="uD1-69-x2A"/>
                         <outlet property="txtPassword" destination="UX9-Dp-zRq" id="oy4-nc-rgK"/>
                         <outlet property="txtPhoneNumber" destination="32H-MP-3fg" id="zw3-wD-9g7"/>
-                        <segue destination="Ftp-PR-qJA" kind="show" identifier="cook_signup" id="VzO-OR-XhK"/>
+                        <segue destination="Pvq-Bv-4XW" kind="show" identifier="cook_signup" id="gfa-P8-fCQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Irl-Q7-ta4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1892" y="1070"/>
+            <point key="canvasLocation" x="-1892" y="994"/>
         </scene>
         <!--Upload Dish - Entree Details-->
         <scene sceneID="XO5-03-9fy">
@@ -1522,7 +1522,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4my-lP-ZWO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-721" y="-867"/>
+            <point key="canvasLocation" x="-661" y="2011"/>
         </scene>
         <!--Dish Detail-->
         <scene sceneID="Gsv-d6-210">
@@ -2407,10 +2407,9 @@ Pick-up at: 12:30 pm  Cook contact info Address: 639 Library Pl, Evanston�
     <inferredMetricsTieBreakers>
         <segue reference="ziK-D7-Sg9"/>
         <segue reference="sXz-f7-QNd"/>
-        <segue reference="gIZ-rg-JR8"/>
-        <segue reference="BPL-Kd-xed"/>
+        <segue reference="bTI-xQ-bNH"/>
         <segue reference="AVK-yv-1QN"/>
-        <segue reference="VzO-OR-XhK"/>
+        <segue reference="BPL-Kd-xed"/>
         <segue reference="b4I-4f-NOs"/>
     </inferredMetricsTieBreakers>
 </document>
