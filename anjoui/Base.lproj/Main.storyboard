@@ -153,14 +153,14 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main-screen.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QZN-xt-4Ch">
-                                <rect key="frame" x="0.0" y="0.0" width="347" height="800"/>
+                                <rect key="frame" x="0.0" y="0.0" width="623" height="600"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Healthy homemade food available to everyone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJB-LW-KyX">
-                                <rect key="frame" x="43" y="342" width="235" height="115"/>
+                                <rect key="frame" x="183" y="242" width="235" height="115"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="115" id="IiL-5E-bfp"/>
                                     <constraint firstAttribute="width" constant="235" id="xub-5l-PPw"/>
@@ -170,7 +170,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85R-Sh-XJ5">
-                                <rect key="frame" x="0.0" y="755" width="160" height="45"/>
+                                <rect key="frame" x="0.0" y="555" width="300" height="45"/>
                                 <color key="backgroundColor" red="0.99607843137254903" green="0.7686274509803922" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="zVN-O6-Yyd"/>
@@ -185,7 +185,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukd-mS-S3s">
-                                <rect key="frame" x="160" y="755" width="160" height="45"/>
+                                <rect key="frame" x="300" y="555" width="300" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="CcN-wS-0V3"/>
@@ -200,7 +200,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="anjoui" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5a-yU-pvr">
-                                <rect key="frame" x="62" y="176" width="196" height="58"/>
+                                <rect key="frame" x="202" y="176" width="196" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="196" id="eFj-Dm-V48"/>
                                 </constraints>
@@ -254,6 +254,12 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="select profile" id="pxn-Xj-rU7">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="RtU-QE-cWu">
+                                            <color key="tintColor" red="0.98823529409999999" green="0.50980392159999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <segue destination="vXZ-lx-hvc" kind="showDetail" id="HqF-ng-sdu"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="log in" id="1hI-jS-Qk4">
                                             <color key="tintColor" red="0.98823529409999999" green="0.50980392159999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
@@ -266,7 +272,7 @@
                                     <rect key="frame" x="0.0" y="20" width="480" height="85"/>
                                 </variation>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtX-jX-42h">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtX-jX-42h">
                                 <rect key="frame" x="0.0" y="627" width="375" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -282,7 +288,7 @@
                                     <action selector="learnMoreTapped:" destination="SGa-H5-PFf" eventType="touchUpInside" id="uzU-gh-73n"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFf-gI-4MJ">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFf-gI-4MJ">
                                 <rect key="frame" x="0.0" y="66" width="375" height="279"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="40"/>
@@ -413,6 +419,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8A5-Zd-HwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -439,7 +446,14 @@
                                     <color key="textColor" red="0.98823529409999999" green="0.50980392159999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="anjoui" id="5F4-pB-Dn7"/>
+                                    <navigationItem title="anjoui" id="5F4-pB-Dn7">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="IAi-O3-hDx">
+                                            <color key="tintColor" red="0.98823529409999999" green="0.50980392159999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <segue destination="vXZ-lx-hvc" kind="showDetail" id="Q2v-k0-Hcu"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                                 <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="0.0" y="20" width="480" height="44"/>
@@ -536,6 +550,8 @@
                             <constraint firstItem="f8N-Bh-afm" firstAttribute="trailing" secondItem="iQt-qn-Ukd" secondAttribute="trailing" id="wRh-Z0-uOy"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="txtEmail" destination="cVQ-dI-efS" id="jeB-gZ-hJR"/>
@@ -1426,7 +1442,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="240"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gQn-iN-iWT" id="2t1-T0-Rgd">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="239.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="$10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89N-iR-pIh">
@@ -1528,7 +1544,7 @@
                                 <rect key="frame" x="0.0" y="22" width="320" height="240"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="54A-OS-HOZ" id="8i1-Vy-zSx">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="239.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="$10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiI-Rw-zVY">
@@ -2476,11 +2492,12 @@ Pick-up at: 12:30 pm  Cook contact info Address: 639 Library Pl, Evanston�
         <image name="main-screen.jpg" width="1936" height="2581"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ziK-D7-Sg9"/>
-        <segue reference="sXz-f7-QNd"/>
+        <segue reference="rc4-Em-wAB"/>
+        <segue reference="b4I-4f-NOs"/>
         <segue reference="NWE-hI-e8M"/>
-        <segue reference="V3u-4M-UcM"/>
-        <segue reference="vbV-aN-cIN"/>
-        <segue reference="AVK-yv-1QN"/>
+        <segue reference="vmC-4z-n1y"/>
+        <segue reference="gQv-n8-mX0"/>
+        <segue reference="sXz-f7-QNd"/>
+        <segue reference="ziK-D7-Sg9"/>
     </inferredMetricsTieBreakers>
 </document>
