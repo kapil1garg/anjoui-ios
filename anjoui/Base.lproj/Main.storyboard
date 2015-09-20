@@ -16,10 +16,8 @@
             <string>JosefinSans-Light</string>
             <string>JosefinSans-Light</string>
             <string>JosefinSans-Light</string>
-        </mutableArray>
-        <mutableArray key="JosefinSans-SemiBoldItalic.ttf">
-            <string>JosefinSans-SemiBold</string>
-            <string>JosefinSans-SemiBold</string>
+            <string>JosefinSans-Light</string>
+            <string>JosefinSans-Light</string>
         </mutableArray>
         <mutableArray key="Lato-Regular.ttf">
             <string>Lato-Regular</string>
@@ -159,8 +157,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main-screen.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QZN-xt-4Ch">
                                 <rect key="frame" x="0.0" y="0.0" width="623" height="600"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Healthy homemade food available to everyone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJB-LW-KyX">
-                                <rect key="frame" x="183" y="242" width="235" height="115"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Healthy homemade food available to everyone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJB-LW-KyX">
+                                <rect key="frame" x="69" y="275" width="235" height="115"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="115" id="IiL-5E-bfp"/>
                                     <constraint firstAttribute="width" constant="235" id="xub-5l-PPw"/>
@@ -171,11 +169,11 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85R-Sh-XJ5">
                                 <rect key="frame" x="0.0" y="555" width="300" height="45"/>
-                                <color key="backgroundColor" red="0.99607843137254903" green="0.7686274509803922" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.50980392159999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="zVN-O6-Yyd"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Light" family="Josefin Sans" pointSize="22"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -184,15 +182,15 @@
                                     <segue destination="SGa-H5-PFf" kind="show" id="vbV-aN-cIN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukd-mS-S3s">
-                                <rect key="frame" x="300" y="555" width="300" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukd-mS-S3s">
+                                <rect key="frame" x="299" y="555" width="300" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="CcN-wS-0V3"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="JosefinSans-Light" family="Josefin Sans" pointSize="22"/>
                                 <state key="normal" title="Log In">
-                                    <color key="titleColor" red="0.99607843139999996" green="0.76862745099999996" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.99607843139999996" green="0.50980392159999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -200,7 +198,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="anjoui" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5a-yU-pvr">
-                                <rect key="frame" x="202" y="176" width="196" height="58"/>
+                                <rect key="frame" x="201" y="176" width="196" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="196" id="eFj-Dm-V48"/>
                                 </constraints>
@@ -272,7 +270,7 @@
                                     <rect key="frame" x="0.0" y="20" width="480" height="85"/>
                                 </variation>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtX-jX-42h">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtX-jX-42h">
                                 <rect key="frame" x="0.0" y="627" width="375" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -288,7 +286,7 @@
                                     <action selector="learnMoreTapped:" destination="SGa-H5-PFf" eventType="touchUpInside" id="uzU-gh-73n"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFf-gI-4MJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFf-gI-4MJ">
                                 <rect key="frame" x="0.0" y="66" width="375" height="279"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Lato-Thin" family="Lato" pointSize="40"/>
@@ -1406,7 +1404,7 @@
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TwA-tb-7J1">
                                 <rect key="frame" x="0.0" y="64" width="159" height="30"/>
-                                <color key="backgroundColor" red="0.99607843139999996" green="0.76862745099999996" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.50980392159999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
                                 <state key="normal" title="Today">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1418,7 +1416,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
                                 <state key="normal" title="Tomorrow">
-                                    <color key="titleColor" red="0.99607843139999996" green="0.76862745099999996" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.99607843139999996" green="0.50980392159999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -1442,7 +1440,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="240"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gQn-iN-iWT" id="2t1-T0-Rgd">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="239.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="$10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89N-iR-pIh">
@@ -1544,7 +1542,7 @@
                                 <rect key="frame" x="0.0" y="22" width="320" height="240"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="54A-OS-HOZ" id="8i1-Vy-zSx">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="239.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="$10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiI-Rw-zVY">
@@ -1574,7 +1572,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3j-at-uM2">
                                             <rect key="frame" x="58" y="188" width="196" height="21"/>
                                             <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
-                                            <color key="textColor" red="0.98823529409999999" green="0.50980392159999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.99607843139999996" green="0.50980392159999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -2492,12 +2490,12 @@ Pick-up at: 12:30 pm  Cook contact info Address: 639 Library Pl, Evanston�
         <image name="main-screen.jpg" width="1936" height="2581"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rc4-Em-wAB"/>
-        <segue reference="b4I-4f-NOs"/>
-        <segue reference="NWE-hI-e8M"/>
-        <segue reference="vmC-4z-n1y"/>
         <segue reference="gQv-n8-mX0"/>
+        <segue reference="vbV-aN-cIN"/>
+        <segue reference="vmC-4z-n1y"/>
+        <segue reference="Nx8-V9-EBq"/>
         <segue reference="sXz-f7-QNd"/>
         <segue reference="ziK-D7-Sg9"/>
+        <segue reference="V3u-4M-UcM"/>
     </inferredMetricsTieBreakers>
 </document>
