@@ -10,11 +10,9 @@ import UIKit
 class EntreeListTableViewCell: UITableViewCell {
     
     // MARK: properties
-    
-    @IBOutlet var dishPrice: UILabel!
-    @IBOutlet var dishPic: UIImageView!
-    @IBOutlet var distanceAndTime: UILabel!
-    @IBOutlet var dishName: UILabel!
-    @IBOutlet var cookProfile: UIImageView!
-
+    @IBOutlet var EntreeName: UILabel!
+    @IBOutlet var EntreeInfo: UILabel!
+    @IBOutlet var EntreePic: UIImageView!
+    @IBOutlet var EntreePrice: UILabel!
+    @IBOutlet var CookProfile: UIImageView!
 }

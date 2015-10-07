@@ -9,14 +9,6 @@
 import UIKit
 
 class EntreeListTableView: UITableView {
-
-    @IBOutlet var EntreePic: UIImageView!
-    @IBOutlet var CookProfile: UIImageView!
-    @IBOutlet var EntreeInfo: UILabel!
-    @IBOutlet var EntreePrice: UILabel!
-    @IBOutlet var EntreeName: UILabel!
-    
-    
     
     /*
     // Only override drawRect: if you perform custom drawing.
