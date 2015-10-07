@@ -1,33 +1,31 @@
 <?php
 include 'index.php';
 
-$first_name = $_POST['first_name'];
-$last_name = $_POST['last_name'];
-$city = $_POST['city'];
-$state = $_POST['state'];
-$country = $_POST['country'];
-$phone_number = $_POST['phone_number'];
-$longitude = $_POST['longitude'];
-$latitude = $_POST['latitude'];
-$description = $_POST['description'];
-$photo_id = $_POST['photo_id'];
-$password = $_POST['password'];
-$email = $_POST['email'];
+$first_name = getPost('first_name', NULL);
+$last_name = getPost('last_name', NULL);
+$city = getPost('city', NULL);
+$state = getPost('state', NULL);
+$country = getPost('country', NULL);
+$phone_number = getPost('phone_number', NULL);
+$longitude = getPost('longitude', NULL);
+$latitude = getPost('latitude', NULL);
+$description = getPost('description', NULL);
+$photo_id = getPost('photo_id', NULL);
+$password = getPost('password', NULL);
+$email = getPost('email', NULL);
 
 $iscook = $_POST['cook'];
 $iseater = $_POST['eater'];
-
-echo $_POST;
-
 
 // hash password
 $hash_password = pw_hash($password);
 
 // create cook and eater IDs
-$cook_id = NULL;
 $eater_id = md5('diner' . strtolower($first_name) . strtolower($email) . strtolower($last_name) . 'id');
 if ($iscook == 'True') {
   $cook_id = md5('cook' . strtolower($first_name) . strtolower($email) . strtolower($last_name) . 'id');
+} else {
+    $cook_id = NULL;
 }
 
 // check if new user is already in database
@@ -35,7 +33,25 @@ $query   = "SELECT count(`customer_id`) as 'number'
             FROM `Customers`
             WHERE `email` = '$email'";
 $results = mysqli_fetch_assoc(mysqli_query($link, $query));
-echo $results['number'];
+
+// add user if not in database
+if ($results['number'] == 0) {
+    $query = "INSERT INTO `Customers`
+                (`cook_id`, `eater_id`, `first_name`, `last_name`, `city`, `state`,`country`, `phone_number`,
+                    `longitude`, `latitude`, `description`, `photo_id`, `password`, `email`)
+              VALUES
+                ('$cook_id', '$eater_id', '$first_name', '$last_name', '$city', '$state', '$country', '$phone_number',
+                    '$longitude', '$latitude', '$description', '$photo_id', '$hash_password', '$email')";
+    if (mysqli_query($link, $query)) {
+        sendResponse(200, 'User successfully created.');
+    } else {
+        sendResponse(500, 'Upload error.');
+    }
+} else {
+    sendResponse(409, "User email already exists.");
+}
+
+// echo $results['number'];
 
 // create user if
 // $rows = array();
