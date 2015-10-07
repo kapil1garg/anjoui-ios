@@ -1,7 +1,6 @@
 <?php
 
 // Helper method to get a string description for an HTTP status code
-// From http://www.gen-x-design.com/archives/create-a-rest-api-with-php/
 function getStatusCodeMessage($status)
 {
     $codes = Array(
@@ -69,6 +68,13 @@ function pw_verify($p, $hash) {
         return true;
     }
     return false;
+}
+
+// getting values from POST (set default if not there)
+function getPost($key, $default) {
+    if (isset($_POST[$key]))
+        return $_POST[$key];
+    return $default;
 }
 
 // sourced from https://github.com/tazotodua/useful-php-scripts/blob/master/get-remote-url-content-data.php
