@@ -1,6 +1,8 @@
 <?php
+
 include 'index.php';
 
+// get values from POST
 $first_name = getPost('first_name', NULL);
 $last_name = getPost('last_name', NULL);
 $city = getPost('city', NULL);
@@ -50,45 +52,6 @@ if ($results['number'] == 0) {
 } else {
     sendResponse(409, "User email already exists.");
 }
-
-// echo $results['number'];
-
-// create user if
-// $rows = array();
-// while ($r = mysqli_fetch_assoc($results)) {
-//     $rows[] = $r;
-// }
-
-
-
-// // check if user is in database and if they have admin privileges
-// $query   = "SELECT count(`id`) as 'valid_token',
-//                        `admin` as 'valid_admin'
-//             FROM `ar_users`
-//             WHERE `idtoken` = '$user_token'";
-// $results = mysqli_fetch_assoc(mysqli_query($con, $query));
-
-// $user_exists = (int) ($results["valid_token"]);
-// $user_admin  = (int) ($results["valid_admin"]);
-
-// // create if valid, otherwise error
-// if ($user_exists == 1 && $user_admin == 1) {
-//     if ($rows[0]['number'] == 0) {
-//         // add new user
-//         $query = "INSERT INTO `ar_users` (`name`, `email`, `code`, `idtoken`)
-//                   VALUES ('$name', '$email', '$hash_pass', '$token_code')";
-
-//         if (!mysqli_query($con, $query)) {
-//             echo "Somethings wrong here: $query.";
-//         } else {
-//             echo "User \"$name\" successfully created.";
-//         }
-//     } else {
-//         echo "Email \"$email\" already exists.";
-//     }
-// } else {
-//     echo "You do not have privileges to create or modify users.";
-// }
 
 mysqli_close($link);
 ?>

@@ -160,11 +160,6 @@ $password = 'GoTeamTBD6!';
 
 $link = mysqli_connect($dbhost, $username, $password);
 if (!$link) {
-    // echo "Error: Unable to connect to MySQL." . PHP_EOL;
-    // echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-    // echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-    // exit;
-
     sendResponse(503, 'Connection error.');
     exit;
 }
@@ -174,6 +169,4 @@ if (!$db_selected) {
     sendResponse(404, 'Database not found');
     die ('Can\'t use ' . $dbname . ': ' . mysql_error());
 }
-
-
 ?>
