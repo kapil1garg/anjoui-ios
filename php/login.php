@@ -80,10 +80,10 @@ if (count($rows) == 1) {
 
         sendResponse(200, json_encode($rows[0], JSON_NUMERIC_CHECK));
     } else {
-        sendResponse(403, "Invalid credientials");
+        sendResponse(403, "Password is incorrect.");
     }
 } else {
-    sendResponse(403, "Bad request.");
+    sendResponse(403, "Email does not exist.");
 }
 
 // class LoginUser {
