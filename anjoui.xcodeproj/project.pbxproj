@@ -84,6 +84,7 @@
 		00F457721B6DDB62008E9AFF /* SignupCookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F457711B6DDB62008E9AFF /* SignupCookViewController.swift */; };
 		00F457741B6DDB6B008E9AFF /* SignupDinerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F457731B6DDB6B008E9AFF /* SignupDinerViewController.swift */; };
 		1E23D0991BC326080065DEAC /* EntreeListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E23D0981BC326080065DEAC /* EntreeListTableView.swift */; settings = {ASSET_TAGS = (); }; };
+		1E69F93F1BC62D2800D9900D /* EntreeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69F93E1BC62D2800D9900D /* EntreeModel.swift */; settings = {ASSET_TAGS = (); }; };
 		1E86D6D31B521208003F6736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E86D6D21B521208003F6736 /* AppDelegate.swift */; };
 		1E86D6D51B521208003F6736 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E86D6D41B521208003F6736 /* ViewController.swift */; };
 		1E86D6D81B521208003F6736 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E86D6D61B521208003F6736 /* Main.storyboard */; };
@@ -181,6 +182,7 @@
 		00F457711B6DDB62008E9AFF /* SignupCookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupCookViewController.swift; sourceTree = "<group>"; };
 		00F457731B6DDB6B008E9AFF /* SignupDinerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupDinerViewController.swift; sourceTree = "<group>"; };
 		1E23D0981BC326080065DEAC /* EntreeListTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntreeListTableView.swift; sourceTree = "<group>"; };
+		1E69F93E1BC62D2800D9900D /* EntreeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntreeModel.swift; sourceTree = "<group>"; };
 		1E86D6CD1B521208003F6736 /* anjoui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = anjoui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E86D6D11B521208003F6736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E86D6D21B521208003F6736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -349,6 +351,7 @@
 				00F457711B6DDB62008E9AFF /* SignupCookViewController.swift */,
 				00F457731B6DDB6B008E9AFF /* SignupDinerViewController.swift */,
 				000CA8A31B6E36C2005EDF55 /* SignupSelectProfileViewController.swift */,
+				1E69F93E1BC62D2800D9900D /* EntreeModel.swift */,
 			);
 			path = anjoui;
 			sourceTree = "<group>";
@@ -550,6 +553,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E69F93F1BC62D2800D9900D /* EntreeModel.swift in Sources */,
 				000CA8A41B6E36C2005EDF55 /* SignupSelectProfileViewController.swift in Sources */,
 				00F457741B6DDB6B008E9AFF /* SignupDinerViewController.swift in Sources */,
 				00EEEBD01B6DEB1D00EDE4F7 /* EntreeListTableViewController.swift in Sources */,

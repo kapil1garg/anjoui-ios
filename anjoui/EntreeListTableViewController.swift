@@ -9,8 +9,8 @@
 //import UIKit
 //
 //class EntreeListTableViewController: UITableViewController {
-//    // MARK: Properties
-//    
+    // MARK: Properties
+//
 //    override func viewDidLoad() {
 //        super.viewDidLoad()
 //
@@ -46,14 +46,14 @@
 //    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 //        let entrees = tableView.dequeueReusableCellWithIdentifier("EntreeListTableViewCell") as! EntreeListTableViewCell
 //        
-//        entrees.dishPic.image = UIImage(named:"dish.jpg")
-//        entrees.dishName.text = "Lotus Root with Edemame"
-//        entrees.dishPrice.text = "$10"
-//        entrees.distanceAndTime.text = "0.9 mile|12:30pm-1:30pm"
+//        entrees.EntreePic.image = UIImage(named:"dish.jpg")
+//        entrees.EntreeName.text = "Lotus Root with Edemame"
+//        entrees.EntreePrice.text = "$10"
+//        entrees.EntreeInfo.text = "0.9 mile|12:30pm-1:30pm"
 //
 //        return entrees
 //    }
-//    
+//
 //
 //    /*
 //    // Override to support conditional editing of the table view.
@@ -116,18 +116,28 @@ import UIKit
 class EntreeListTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     // MARK: Properties
     
-    @IBOutlet
-    var tableView: UITableView!
+    @IBOutlet var tableView: UITableView!
+    
+    // Kevin:
+    var arrayOfEntree: [EntreeModel] = [EntreeModel]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Kevin:
+        self.setUpEntree()
+        
         self.tableView.registerClass(EntreeListTableViewCell.self, forCellReuseIdentifier: "EntreeListTableViewCell")
+        
+        // To make sure the last cell can be displayed
+        self.tableView.contentInset = UIEdgeInsetsMake(0,0,240,0)
         
         //Looks for single or multiple taps.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
         view.addGestureRecognizer(tap)
     }
+    
     
     //Calls this function when the tap is recognized.
     func DismissKeyboard(){
@@ -135,25 +145,45 @@ class EntreeListTableViewController: UIViewController, UITableViewDelegate, UITa
         view.endEditing(true)
     }
     
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    // Kevin: stupid way to generate the array for a dish
+    func setUpEntree() {
+        
+        var entree1 = EntreeModel(name: "Lotus Root With Edemame", info: "0.9miles 12-2pm", price: 10, picName: "dish.jpg", profileName: "Profile_Photo.jpg")
+        var entree2 = EntreeModel(name:"Lotus Root -2", info: "1.6 miles 12-2pm", price: 12, picName: "dish4.jpg", profileName: "Profile_Photo.jpg")
+        var entree3 = EntreeModel(name:"This is testing", info: "hi there", price: 50, picName:"dine-food.png", profileName:"dish.jpg")
+        
+        arrayOfEntree.append(entree1)
+        arrayOfEntree.append(entree2)
+        arrayOfEntree.append(entree3)
+        
+    }
+    
+    
     // MARK: - Table view data source
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        
+        return arrayOfEntree.count
+        
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var entrees = self.tableView.dequeueReusableCellWithIdentifier("EntreeListTableViewCell") as! EntreeListTableViewCell
-        //        print(entrees.dishPic)
-//        entrees.dishPic.image = UIImage(named:"dish.jpg")
-//        entrees.dishName?.text = "Lotus Root with Edemame"
-//        entrees.dishPrice?.text = "$10"
-//        entrees.distanceAndTime?.text = "0.9 mile|12:30pm-1:30pm"
+        let entrees:EntreeListTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("EntreeCell") as! EntreeListTableViewCell
         
+        let dish = arrayOfEntree[indexPath.row]
+        
+        entrees.setCell(dish.name, EntreeInfoText: dish.info, EntreePriceInt: dish.price, EntreePicText: dish.picName, CookProfileText: dish.profileName)
+        
+//        //        print(entrees.dishPic)
+//        entrees.EntreePic?.image = UIImage(named:"dish.jpg")
+//        entrees.EntreeName?.text = "Lotus Root with Edemame"
+//        entrees.EntreePrice?.text = "$10"
+//        entrees.EntreeInfo?.text = "0.9 mile|12:30pm-1:30pm"
+//        
         return entrees
     }
     
