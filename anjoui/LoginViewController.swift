@@ -8,8 +8,6 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    
-    var client = MSClient?()
 
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!

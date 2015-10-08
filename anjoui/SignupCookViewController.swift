@@ -9,8 +9,6 @@ import UIKit
 
 class SignupCookViewController: UIViewController {
     
-    var client = MSClient?()
-    
     @IBOutlet weak var txtFirstName: UITextField!
     @IBOutlet weak var txtLastName: UITextField!
     @IBOutlet weak var txtEmail: UITextField!

@@ -7,10 +7,7 @@
 
 import UIKit
 
-
 class SignupDinerViewController: UIViewController {
-    
-    var client = MSClient?()
     
     @IBOutlet weak var txtFirstName: UITextField!
     @IBOutlet weak var txtLastName: UITextField!
