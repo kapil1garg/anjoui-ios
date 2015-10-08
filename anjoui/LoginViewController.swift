@@ -17,10 +17,10 @@ class LoginViewController: UIViewController {
     @IBAction func loginClick(sender: UIButton) {
         // Authenticate user
         let user_email:String = (txtEmail.text! as String).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-        let password:String = txtPassword.text! as String
+        let user_password:String = txtPassword.text! as String
         
         // check for valid input
-        if (user_email == "" || password == "") {
+        if (user_email == "" || user_password == "") {
             let alertView:UIAlertView = UIAlertView()
             alertView.title = "Please enter Email and Password"
             alertView.message = "Email and Password fields cannot be blank."
@@ -36,7 +36,7 @@ class LoginViewController: UIViewController {
             alertView.show()
         } else {
             // create post data string
-            let post:NSString = "email=\(user_email)&password=\(password)"
+            let post:NSString = "email=\(user_email)&password=\(user_password)"
             NSLog("PostData: %@",post);
             
             // create connection URL
