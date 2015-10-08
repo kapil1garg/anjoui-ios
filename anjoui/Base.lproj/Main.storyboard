@@ -154,15 +154,15 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="main-screen.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QZN-xt-4Ch">
-                                <rect key="frame" x="0.0" y="0.0" width="347" height="756"/>
+                                <rect key="frame" x="0.0" y="0.0" width="623" height="756"/>
                                 <animations/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Healthy homemade food available to everyone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJB-LW-KyX">
-                                <rect key="frame" x="43" y="206" width="235" height="115"/>
+                                <rect key="frame" x="183" y="206" width="235" height="115"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="115" id="IiL-5E-bfp"/>
@@ -173,7 +173,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85R-Sh-XJ5">
-                                <rect key="frame" x="0.0" y="711" width="160" height="45"/>
+                                <rect key="frame" x="0.0" y="711" width="300" height="45"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.50980392159999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -189,7 +189,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="anjoui" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5a-yU-pvr">
-                                <rect key="frame" x="62" y="122" width="196" height="58"/>
+                                <rect key="frame" x="202" y="122" width="196" height="58"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="196" id="eFj-Dm-V48"/>
@@ -199,7 +199,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukd-mS-S3s">
-                                <rect key="frame" x="160" y="711" width="160" height="45"/>
+                                <rect key="frame" x="300" y="711" width="300" height="45"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -2780,10 +2780,10 @@ Phone number: 224 578 6277</string>
         <segue reference="oh5-IE-ETO"/>
         <segue reference="8ji-YF-Mew"/>
         <segue reference="ziK-D7-Sg9"/>
-        <segue reference="NWE-hI-e8M"/>
+        <segue reference="gfa-P8-fCQ"/>
+        <segue reference="BPL-Kd-xed"/>
+        <segue reference="vmC-4z-n1y"/>
         <segue reference="V3u-4M-UcM"/>
-        <segue reference="Q2v-k0-Hcu"/>
-        <segue reference="vbV-aN-cIN"/>
         <segue reference="u32-YS-vKp"/>
         <segue reference="Uk7-5w-OkJ"/>
     </inferredMetricsTieBreakers>
