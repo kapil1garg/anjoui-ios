@@ -58,18 +58,6 @@ function sendResponse($status = 200, $body = '', $content_type = 'text/html') {
     echo $body;
 }
 
-// pasword hashing/verification functions
-function pw_hash($p) {
-    return md5("anjoui" . $p . "foods" . $p . "taste_better_with_salt");
-}
-
-function pw_verify($p, $hash) {
-    if (pw_hash($p) == $hash) {
-        return true;
-    }
-    return false;
-}
-
 // getting values from POST (set default if not there)
 function getPost($key, $default) {
     if (isset($_POST[$key]))

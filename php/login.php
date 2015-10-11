@@ -22,9 +22,8 @@ while ($r = mysqli_fetch_assoc($results)) {
 // if only one instance of email check password and return if correct, otherwise error
 if (count($rows) == 1) {
     $stored_hash = $rows[0]['password'];
-    if (pw_verify($pass, $stored_hash)) {
+    if (password_verify($pass, $stored_hash)) {
         $rows[0]['password'] = "";
-
         sendResponse(200, json_encode($rows[0], JSON_NUMERIC_CHECK));
     } else {
         sendResponse(403, "Password is incorrect.");

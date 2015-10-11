@@ -20,7 +20,7 @@ $iscook = $_POST['cook'];
 $iseater = $_POST['eater'];
 
 // hash password
-$hash_password = pw_hash($password);
+$hash_password = password_hash($password, PASSWORD_BCRYPT, array("cost" => 11));
 
 // create cook and eater IDs
 $eater_id = md5('diner' . strtolower($first_name) . strtolower($email) . strtolower($last_name) . 'id');
