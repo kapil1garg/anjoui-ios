@@ -77,13 +77,11 @@
 		009017061B69E0030019C0FB /* dish4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 009017031B69E0030019C0FB /* dish4.jpg */; };
 		009017071B69E0030019C0FB /* Profile_Photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 009017041B69E0030019C0FB /* Profile_Photo.jpg */; };
 		009017091B69E08F0019C0FB /* main-screen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 009017081B69E08F0019C0FB /* main-screen.jpg */; };
-		0090170C1B69F45C0019C0FB /* WindowsAzureMobileServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0090170B1B69F45C0019C0FB /* WindowsAzureMobileServices.framework */; };
 		00EEEBCF1B6DEB1D00EDE4F7 /* EntreeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEEBCD1B6DEB1D00EDE4F7 /* EntreeListTableViewCell.swift */; };
 		00EEEBD01B6DEB1D00EDE4F7 /* EntreeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EEEBCE1B6DEB1D00EDE4F7 /* EntreeListTableViewController.swift */; };
 		00F457701B6DDB57008E9AFF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F4576F1B6DDB57008E9AFF /* LoginViewController.swift */; };
 		00F457721B6DDB62008E9AFF /* SignupCookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F457711B6DDB62008E9AFF /* SignupCookViewController.swift */; };
 		00F457741B6DDB6B008E9AFF /* SignupDinerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F457731B6DDB6B008E9AFF /* SignupDinerViewController.swift */; };
-		1E23D0991BC326080065DEAC /* EntreeListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E23D0981BC326080065DEAC /* EntreeListTableView.swift */; settings = {ASSET_TAGS = (); }; };
 		1E69F93F1BC62D2800D9900D /* EntreeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69F93E1BC62D2800D9900D /* EntreeModel.swift */; settings = {ASSET_TAGS = (); }; };
 		1E86D6D31B521208003F6736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E86D6D21B521208003F6736 /* AppDelegate.swift */; };
 		1E86D6D51B521208003F6736 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E86D6D41B521208003F6736 /* ViewController.swift */; };
@@ -181,7 +179,6 @@
 		00F4576F1B6DDB57008E9AFF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		00F457711B6DDB62008E9AFF /* SignupCookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupCookViewController.swift; sourceTree = "<group>"; };
 		00F457731B6DDB6B008E9AFF /* SignupDinerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupDinerViewController.swift; sourceTree = "<group>"; };
-		1E23D0981BC326080065DEAC /* EntreeListTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntreeListTableView.swift; sourceTree = "<group>"; };
 		1E69F93E1BC62D2800D9900D /* EntreeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntreeModel.swift; sourceTree = "<group>"; };
 		1E86D6CD1B521208003F6736 /* anjoui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = anjoui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E86D6D11B521208003F6736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -200,7 +197,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0090170C1B69F45C0019C0FB /* WindowsAzureMobileServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +213,7 @@
 		000CA8721B6E19CC005EDF55 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				000CA8A11B6E31B5005EDF55 /* dine-food.png */,
 				000CA8931B6E1D89005EDF55 /* logo-40pt-3x.png */,
 				000CA8941B6E1D89005EDF55 /* logo-29pt-3x.png */,
 				000CA8951B6E1D89005EDF55 /* logo-29pt-2x.png */,
@@ -231,7 +228,6 @@
 		009016901B69DFD90019C0FB /* images */ = {
 			isa = PBXGroup;
 			children = (
-				000CA8A11B6E31B5005EDF55 /* dine-food.png */,
 				000CA89F1B6E30DD005EDF55 /* cook-kitchen.png */,
 				009017081B69E08F0019C0FB /* main-screen.jpg */,
 				009017021B69E0030019C0FB /* dish.jpg */,
@@ -339,7 +335,6 @@
 			isa = PBXGroup;
 			children = (
 				00EEEBCD1B6DEB1D00EDE4F7 /* EntreeListTableViewCell.swift */,
-				1E23D0981BC326080065DEAC /* EntreeListTableView.swift */,
 				00EEEBCE1B6DEB1D00EDE4F7 /* EntreeListTableViewController.swift */,
 				1E86D6D21B521208003F6736 /* AppDelegate.swift */,
 				1E86D6D41B521208003F6736 /* ViewController.swift */,
@@ -560,7 +555,6 @@
 				1E86D6D51B521208003F6736 /* ViewController.swift in Sources */,
 				00F457721B6DDB62008E9AFF /* SignupCookViewController.swift in Sources */,
 				00F457701B6DDB57008E9AFF /* LoginViewController.swift in Sources */,
-				1E23D0991BC326080065DEAC /* EntreeListTableView.swift in Sources */,
 				00EEEBCF1B6DEB1D00EDE4F7 /* EntreeListTableViewCell.swift in Sources */,
 				1E86D6D31B521208003F6736 /* AppDelegate.swift in Sources */,
 			);
