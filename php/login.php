@@ -7,13 +7,13 @@ $email = $_POST['email'];
 $pass  = $_POST['password'];
 
 // query database for user
-$query = "SELECT *
+$query   = "SELECT *
           FROM `Customers`
           WHERE `email` = '$email'";
 $results = mysqli_query($link, $query);
 
 // parse rows
-$rows    = array();
+$rows = array();
 while ($r = mysqli_fetch_assoc($results)) {
     $rows[] = $r;
 }
