@@ -21,7 +21,7 @@ class EntreeListTableViewCell: UITableViewCell {
         
         self.EntreeName.text = EntreeNameText
         self.EntreeInfo.text = EntreeInfoText
-        self.EntreePrice.text = String(EntreePriceInt)
+        self.EntreePrice.text = "$" + String(EntreePriceInt)
         self.EntreePic.image = UIImage(named: EntreePicText)
         self.CookProfile.image = UIImage(named: CookProfileText)
          

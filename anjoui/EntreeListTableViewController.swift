@@ -13,20 +13,17 @@ class EntreeListTableViewController: UIViewController, UITableViewDelegate, UITa
     
     @IBOutlet var tableView: UITableView!
     
-    // Kevin:
     var arrayOfEntree: [EntreeModel] = [EntreeModel]()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Kevin:
         self.setUpEntree()
         
         self.tableView.registerClass(EntreeListTableViewCell.self, forCellReuseIdentifier: "EntreeListTableViewCell")
         
-        // To make sure the last cell can be displayed
-        self.tableView.contentInset = UIEdgeInsetsMake(0,0,240,0)
+        // auto sizing for cells on different size screens
+        self.tableView.estimatedRowHeight = 240.0
+        self.tableView.rowHeight = UITableViewAutomaticDimension
         
         //Looks for single or multiple taps.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
@@ -35,7 +32,7 @@ class EntreeListTableViewController: UIViewController, UITableViewDelegate, UITa
     
     
     //Calls this function when the tap is recognized.
-    func DismissKeyboard(){
+    func DismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
     }
@@ -45,10 +42,10 @@ class EntreeListTableViewController: UIViewController, UITableViewDelegate, UITa
         // Dispose of any resources that can be recreated.
     }
     
-    // Kevin: stupid way to generate the array for a dish
+    // Generate the array for a dish
     func setUpEntree() {
-        let entree1 = EntreeModel(name: "Lotus Root With Edemame", info: "0.9miles 12-2pm", price: 10, picName: "dish.jpg", profileName: "Profile_Photo.jpg")
-        let entree2 = EntreeModel(name:"Lotus Root -2", info: "1.6 miles 12-2pm", price: 12, picName: "dish4.jpg", profileName: "Profile_Photo.jpg")
+        let entree1 = EntreeModel(name: "Lotus Root With Edemame", info: "0.9miles | 12-2pm", price: 10, picName: "dish.jpg", profileName: "Profile_Photo.jpg")
+        let entree2 = EntreeModel(name:"Lotus Root -2", info: "1.6 miles | 12-2pm", price: 12, picName: "dish4.jpg", profileName: "Profile_Photo.jpg")
         let entree3 = EntreeModel(name:"This is testing", info: "hi there", price: 50, picName:"dine-food.png", profileName:"dish.jpg")
         
         arrayOfEntree.append(entree1)
@@ -67,6 +64,7 @@ class EntreeListTableViewController: UIViewController, UITableViewDelegate, UITa
         let dish = arrayOfEntree[indexPath.row]
         
         entrees.setCell(dish.name, EntreeInfoText: dish.info, EntreePriceInt: dish.price, EntreePicText: dish.picName, CookProfileText: dish.profileName)
+        
         return entrees
     }
     
