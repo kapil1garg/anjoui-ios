@@ -2779,14 +2779,14 @@ Phone number: 224 578 6277</string>
         <image name="main-screen.jpg" width="1936" height="2581"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="vbV-aN-cIN"/>
+        <segue reference="vmC-4z-n1y"/>
+        <segue reference="Nx8-V9-EBq"/>
         <segue reference="oh5-IE-ETO"/>
         <segue reference="8ji-YF-Mew"/>
         <segue reference="ziK-D7-Sg9"/>
-        <segue reference="Nx8-V9-EBq"/>
         <segue reference="HCL-0I-hfm"/>
-        <segue reference="vmC-4z-n1y"/>
-        <segue reference="vbV-aN-cIN"/>
-        <segue reference="Y7R-Uf-6wJ"/>
+        <segue reference="V3u-4M-UcM"/>
         <segue reference="u32-YS-vKp"/>
     </inferredMetricsTieBreakers>
 </document>

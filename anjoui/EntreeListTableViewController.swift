@@ -15,16 +15,20 @@ class EntreeListTableViewController: UIViewController, UITableViewDelegate, UITa
     
     var arrayOfEntree: [EntreeModel] = [EntreeModel]()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpEntree()
         
         self.tableView.registerClass(EntreeListTableViewCell.self, forCellReuseIdentifier: "EntreeListTableViewCell")
         
-        // auto sizing for cells on different size screens
+        // Auto sizing for cells on different size screens
         self.tableView.estimatedRowHeight = 240.0
         self.tableView.rowHeight = UITableViewAutomaticDimension
         
+        // Make sure last cell displays properly, 800 being the view controller inferface height in main story board
+        self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 800 - UIScreen.mainScreen().bounds.height, 0)
+
         //Looks for single or multiple taps.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
         view.addGestureRecognizer(tap)
