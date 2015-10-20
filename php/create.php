@@ -25,9 +25,11 @@ $hash_password = password_hash($password, PASSWORD_BCRYPT, array(
 ));
 
 // create cook and eater IDs
-$eater_id = md5('diner' . strtolower($first_name) . strtolower($email) . strtolower($last_name) . 'id');
+$eater_id = md5('diner' . strtolower($first_name) . strtolower($email) .
+    strtolower($last_name) . 'id');
 if ($iscook == 'True') {
-    $cook_id = md5('cook' . strtolower($first_name) . strtolower($email) . strtolower($last_name) . 'id');
+    $cook_id = md5('cook' . strtolower($first_name) . strtolower($email) .
+        strtolower($last_name) . 'id');
 } else {
     $cook_id = NULL;
 }
@@ -41,11 +43,15 @@ $results = mysqli_fetch_assoc(mysqli_query($link, $query));
 // add user if not in database
 if ($results['number'] == 0) {
     $query = "INSERT INTO `Customers`
-                (`cook_id`, `eater_id`, `first_name`, `last_name`, `city`, `state`,`country`, `phone_number`,
-                    `longitude`, `latitude`, `description`, `photo_id`, `password`, `email`)
+                (`cook_id`, `eater_id`, `first_name`, `last_name`,
+                    `city`, `state`,`country`, `phone_number`,
+                    `longitude`, `latitude`, `description`, `photo_id`,
+                    `password`, `email`)
               VALUES
-                ('$cook_id', '$eater_id', '$first_name', '$last_name', '$city', '$state', '$country', '$phone_number',
-                    '$longitude', '$latitude', '$description', '$photo_id', '$hash_password', '$email')";
+                ('$cook_id', '$eater_id', '$first_name', '$last_name',
+                    '$city', '$state', '$country', '$phone_number',
+                    '$longitude', '$latitude', '$description', '$photo_id',
+                    '$hash_password', '$email')";
     if (mysqli_query($link, $query)) {
         sendResponse(200, 'User successfully created.');
     } else {

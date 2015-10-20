@@ -19,7 +19,8 @@ while ($r = mysqli_fetch_assoc($results)) {
 }
 
 // validate user
-// if only one instance of email check password and return if correct, otherwise error
+// if only one instance of email check password and return if correct
+// otherwise error
 if (count($rows) == 1) {
     $stored_hash = $rows[0]['password'];
     if (password_verify($pass, $stored_hash)) {

@@ -13,7 +13,7 @@ class EntreeListTableViewController: UIViewController, UITableViewDelegate, UITa
     
     @IBOutlet var tableView: UITableView!
     
-    var arrayOfEntree: [EntreeModel] = [EntreeModel]()
+    var arrayOfEntrees: [EntreeModel] = [EntreeModel]()
     
     
     override func viewDidLoad() {
@@ -46,26 +46,77 @@ class EntreeListTableViewController: UIViewController, UITableViewDelegate, UITa
         // Dispose of any resources that can be recreated.
     }
     
+    func pullEntrees() -> [Dictionary<String, AnyObject>] {
+        // create connection URL
+        let url: NSURL = NSURL(string: "http://ec2-52-23-188-123.compute-1.amazonaws.com/anjoui/get_dishes.php")!
+        let request:NSMutableURLRequest = NSMutableURLRequest(URL: url)
+        request.HTTPMethod = "POST"
+        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        request.setValue("application/json", forHTTPHeaderField: "Accept")
+        
+        var response: NSURLResponse?
+        do {
+            let urlData: NSData? = try NSURLConnection.sendSynchronousRequest(request, returningResponse: &response)
+            
+            if ( urlData != nil ) {
+                let res = response as! NSHTTPURLResponse!;
+                NSLog("Response code: %ld", res.statusCode);
+                
+                if (res.statusCode == 200) {
+                    do {
+                        let jsonData:NSArray = try NSJSONSerialization.JSONObjectWithData(urlData!, options: NSJSONReadingOptions.MutableContainers) as! NSArray
+                        
+                        var mealArray = [Dictionary<String, AnyObject>]()
+                        for meal in jsonData {
+                            mealArray.append(meal as! Dictionary<String, AnyObject>)
+                        }
+                        return mealArray
+                    } catch let error as NSError {
+                        print(error)
+                        return []
+                    }
+                }
+            } else {
+                return []
+            }
+        } catch let error as NSError {
+            print(error)
+            return []
+        }
+        return []
+    }
+    
     // Generate the array for a dish
     func setUpEntree() {
-        let entree1 = EntreeModel(name: "Lotus Root With Edemame", info: "0.9miles | 12-2pm", price: 10, picName: "dish.jpg", profileName: "Profile_Photo.jpg")
-        let entree2 = EntreeModel(name:"Lotus Root -2", info: "1.6 miles | 12-2pm", price: 12, picName: "dish4.jpg", profileName: "Profile_Photo.jpg")
-        let entree3 = EntreeModel(name:"This is testing", info: "hi there", price: 50, picName:"dine-food.png", profileName:"dish.jpg")
+        let dbEntrees = pullEntrees()
+        print(dbEntrees)
         
-        arrayOfEntree.append(entree1)
-        arrayOfEntree.append(entree2)
-        arrayOfEntree.append(entree3)
+        if (dbEntrees.count == 0) {
+            let alertView:UIAlertView = UIAlertView()
+            alertView.title = "Error"
+            alertView.message = "Could not connect to database. Please try again later."
+            alertView.delegate = self
+            alertView.addButtonWithTitle("OK")
+            alertView.show()
+        } else {
+            
+        }
+        
+        for entree in dbEntrees {
+            arrayOfEntrees.append(EntreeModel(name: entree["dish_name"] as! String, info: entree["dish_description"] as! String,
+                price: entree["dish_price"] as! Int, picName: "dish.jpg", profileName:"Profile_Photo.jpg"))
+        }
     }
     
     
     // MARK: - Table view data source
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrayOfEntree.count
+        return arrayOfEntrees.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let entrees:EntreeListTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("EntreeCell") as! EntreeListTableViewCell
-        let dish = arrayOfEntree[indexPath.row]
+        let dish = arrayOfEntrees[indexPath.row]
         
         entrees.setCell(dish.name, EntreeInfoText: dish.info, EntreePriceInt: dish.price, EntreePicText: dish.picName, CookProfileText: dish.profileName)
         
