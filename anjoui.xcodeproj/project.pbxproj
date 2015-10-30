@@ -82,9 +82,11 @@
 		00F457701B6DDB57008E9AFF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F4576F1B6DDB57008E9AFF /* LoginViewController.swift */; };
 		00F457721B6DDB62008E9AFF /* SignupCookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F457711B6DDB62008E9AFF /* SignupCookViewController.swift */; };
 		00F457741B6DDB6B008E9AFF /* SignupDinerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F457731B6DDB6B008E9AFF /* SignupDinerViewController.swift */; };
-		1E62F98E1BD99FF90005CC0C /* CookProfilePastDishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E62F98D1BD99FF90005CC0C /* CookProfilePastDishTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		1E62F9941BD9A3730005CC0C /* CookProfilePastDishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E62F9931BD9A3730005CC0C /* CookProfilePastDishViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		1E69F93F1BC62D2800D9900D /* EntreeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69F93E1BC62D2800D9900D /* EntreeModel.swift */; settings = {ASSET_TAGS = (); }; };
+		1E62F98E1BD99FF90005CC0C /* CookProfilePastDishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E62F98D1BD99FF90005CC0C /* CookProfilePastDishTableViewCell.swift */; };
+		1E62F9941BD9A3730005CC0C /* CookProfilePastDishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E62F9931BD9A3730005CC0C /* CookProfilePastDishViewController.swift */; };
+		1E69F93F1BC62D2800D9900D /* EntreeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69F93E1BC62D2800D9900D /* EntreeModel.swift */; };
+		1E7D73441BE1877D00D7B447 /* CookStatusPageCurrentDishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7D73431BE1877D00D7B447 /* CookStatusPageCurrentDishTableViewCell.swift */; };
+		1E7D73461BE187E200D7B447 /* CookStatusPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7D73451BE187E200D7B447 /* CookStatusPageViewController.swift */; };
 		1E86D6D31B521208003F6736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E86D6D21B521208003F6736 /* AppDelegate.swift */; };
 		1E86D6D51B521208003F6736 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E86D6D41B521208003F6736 /* ViewController.swift */; };
 		1E86D6D81B521208003F6736 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E86D6D61B521208003F6736 /* Main.storyboard */; };
@@ -184,6 +186,8 @@
 		1E62F98D1BD99FF90005CC0C /* CookProfilePastDishTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookProfilePastDishTableViewCell.swift; sourceTree = "<group>"; };
 		1E62F9931BD9A3730005CC0C /* CookProfilePastDishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookProfilePastDishViewController.swift; sourceTree = "<group>"; };
 		1E69F93E1BC62D2800D9900D /* EntreeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntreeModel.swift; sourceTree = "<group>"; };
+		1E7D73431BE1877D00D7B447 /* CookStatusPageCurrentDishTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookStatusPageCurrentDishTableViewCell.swift; sourceTree = "<group>"; };
+		1E7D73451BE187E200D7B447 /* CookStatusPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookStatusPageViewController.swift; sourceTree = "<group>"; };
 		1E86D6CD1B521208003F6736 /* anjoui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = anjoui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E86D6D11B521208003F6736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E86D6D21B521208003F6736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -347,12 +351,14 @@
 				1E86D6DB1B521208003F6736 /* LaunchScreen.xib */,
 				1E86D6D01B521208003F6736 /* Supporting Files */,
 				00F4576F1B6DDB57008E9AFF /* LoginViewController.swift */,
+				1E7D73431BE1877D00D7B447 /* CookStatusPageCurrentDishTableViewCell.swift */,
 				00F457711B6DDB62008E9AFF /* SignupCookViewController.swift */,
 				00F457731B6DDB6B008E9AFF /* SignupDinerViewController.swift */,
 				000CA8A31B6E36C2005EDF55 /* SignupSelectProfileViewController.swift */,
 				1E69F93E1BC62D2800D9900D /* EntreeModel.swift */,
 				1E62F98D1BD99FF90005CC0C /* CookProfilePastDishTableViewCell.swift */,
 				1E62F9931BD9A3730005CC0C /* CookProfilePastDishViewController.swift */,
+				1E7D73451BE187E200D7B447 /* CookStatusPageViewController.swift */,
 			);
 			path = anjoui;
 			sourceTree = "<group>";
@@ -560,9 +566,11 @@
 				00F457741B6DDB6B008E9AFF /* SignupDinerViewController.swift in Sources */,
 				00EEEBD01B6DEB1D00EDE4F7 /* EntreeListTableViewController.swift in Sources */,
 				1E86D6D51B521208003F6736 /* ViewController.swift in Sources */,
+				1E7D73441BE1877D00D7B447 /* CookStatusPageCurrentDishTableViewCell.swift in Sources */,
 				00F457721B6DDB62008E9AFF /* SignupCookViewController.swift in Sources */,
 				00F457701B6DDB57008E9AFF /* LoginViewController.swift in Sources */,
 				1E62F9941BD9A3730005CC0C /* CookProfilePastDishViewController.swift in Sources */,
+				1E7D73461BE187E200D7B447 /* CookStatusPageViewController.swift in Sources */,
 				00EEEBCF1B6DEB1D00EDE4F7 /* EntreeListTableViewCell.swift in Sources */,
 				1E86D6D31B521208003F6736 /* AppDelegate.swift in Sources */,
 			);
