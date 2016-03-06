@@ -82,7 +82,7 @@
 		00F457701B6DDB57008E9AFF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F4576F1B6DDB57008E9AFF /* LoginViewController.swift */; };
 		00F457721B6DDB62008E9AFF /* SignupCookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F457711B6DDB62008E9AFF /* SignupCookViewController.swift */; };
 		00F457741B6DDB6B008E9AFF /* SignupDinerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F457731B6DDB6B008E9AFF /* SignupDinerViewController.swift */; };
-		1E69F93F1BC62D2800D9900D /* EntreeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69F93E1BC62D2800D9900D /* EntreeModel.swift */; settings = {ASSET_TAGS = (); }; };
+		1E69F93F1BC62D2800D9900D /* EntreeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E69F93E1BC62D2800D9900D /* EntreeModel.swift */; };
 		1E86D6D31B521208003F6736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E86D6D21B521208003F6736 /* AppDelegate.swift */; };
 		1E86D6D51B521208003F6736 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E86D6D41B521208003F6736 /* ViewController.swift */; };
 		1E86D6D81B521208003F6736 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E86D6D61B521208003F6736 /* Main.storyboard */; };
