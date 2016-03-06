@@ -126,6 +126,7 @@ class EntreeListTableViewController: UIViewController, UITableViewDelegate, UITa
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     }
     
+    
     /*
     // MARK: - Navigation
     
